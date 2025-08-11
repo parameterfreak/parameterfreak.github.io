@@ -13,7 +13,7 @@ title                    : "The Daily AI"
 title_separator          : "-"
 name                     : &name "parameterfreak"
 description              : &description "Obsessively exploring AI, one parameter at a time"
-url                      : https://parameterfreak.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : https://parameterfreak.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "parameterfreak/parameterfreak.github.io"
 
