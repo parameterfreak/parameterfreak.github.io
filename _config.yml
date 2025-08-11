@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "ko-KR"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "the daily parameter"
+title                    : "The Daily AI"
 title_separator          : "-"
 name                     : &name "parameterfreak"
 description              : &description "Obsessively exploring AI, one parameter at a time"
