@@ -1,7 +1,38 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "PaperOps"
+excerpt: "AI기반의 문서 생성 관리<br/><img src='/images/portfolio/thumbnail.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+# 프로젝트 소개: PaperOps
+
+## 프로젝트 이름
+
+PaperOps
+
+## 목적
+
+PaperOps는 문서와 자료를 효율적으로 정리, 검색 및 상호 작용할 수 있도록 설계된 포괄적인 정보 관리 및 의미 검색 플랫폼입니다. 하이브리드 데이터베이스 접근 방식을 활용하여 기존의 메타데이터 관리와 고급 AI 기반 의미 검색 기능을 결합함으로써, 사용자는 키워드뿐만 아니라 콘텐츠의 의미와 맥락을 통해 정보를 찾을 수 있습니다.
+
+![PaperOps 메인 화면](/images/portfolio/thumbnail.png)
+
+## 주요 기능
+
+*   **지능형 문서 업로드 및 처리:** PDF 문서를 원활하게 업로드하면, 텍스트를 자동으로 추출하고, 고차원 임베딩을 생성하여 의미 검색을 위해 문서를 준비합니다.
+*   **하이브리드 데이터베이스 시스템:** 견고한 메타데이터 관리(사용자, 자료 세부 정보, 파일 상태)를 위한 관계형 데이터베이스(SQLite)와 강력한 의미 기반 콘텐츠 검색을 위한 벡터 데이터베이스(ChromaDB)를 활용합니다.
+*   **고급 의미 검색:** 키워드 매칭을 넘어섭니다. 개념과 아이디어를 검색하면, 정확한 단어가 없더라도 PaperOps가 가장 관련성 높은 문서 섹션을 반환합니다.
+*   **역할 기반 접근 제어:** 다양한 기능에 대한 적절한 권한을 보장하기 위해 명확한 역할(예: 관리자, 사용자)을 통해 사용자 접근을 안전하게 관리합니다.
+*   **데이터 일관성 및 무결성:** 임베딩 상태를 추적하고, 불일치를 감지하며, 데이터를 자동으로 복구하는 내장 메커니즘을 통해 검색 결과가 항상 정확하고 최신 상태를 유지하도록 합니다.
+*   **사용자 친화적인 인터페이스:** Next.js로 구축된 현대적이고 직관적인 프론트엔드는 문서 보기, 관리 및 검색을 위한 원활한 경험을 제공합니다.
+
+## 사용된 기술
+
+*   **프론트엔드:** Next.js 15, TypeScript, Tailwind CSS
+*   **백엔드:** FastAPI (Python), SQLAlchemy ORM
+*   **데이터베이스:** SQLite (관계형), ChromaDB (벡터)
+*   **인증:** JWT (JSON 웹 토큰)
+*   **임베딩 모델:** BGE-M3 (1024차원 임베딩용)
+
+## 시작하는 방법
+
+PaperOps를 시작하려면, 백엔드 및 프론트엔드 구성 요소에 대한 자세한 설정 및 실행 지침은 프로젝트 관리자에게 문의하십시오.
