@@ -23,7 +23,7 @@ repository               : "parameterfreak/parameterfreak.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "parameterfreak"
+  name             : ""
   pronouns         : # example: "she/her"  
   bio              : "ML Researcher"
   location         : "Seoul, Korea"
