@@ -168,7 +168,7 @@ tags:
 
 ---
 
-## 🔮 다음 주 계획 (Next Week Plans)
+## 다음 주 계획 (Next Week Plans)
 
 ### 1. AI Assistant 실제 구현
 - OpenAI/Anthropic API 연동
@@ -192,7 +192,7 @@ tags:
 
 ---
 
-## 🎯 결론
+## 결론
 
 이번 주는 PaperOps 플랫폼의 기반 인프라를 크게 강화한 주간이었습니다. 특히 관리자 기능, 데이터베이스 마이그레이션, 그리고 AI 통합 준비 작업을 통해 플랫폼의 안정성과 확장성을 대폭 향상시켰습니다. 다음 주에는 AI Assistant의 실제 구현과 성능 최적화에 집중할 예정입니다.
 
