@@ -27,8 +27,8 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "ML Researcher"
   location         : "Seoul, Korea"
-  employer         : "ShrinkLabs"
-  uri              : https://shrinklabs.com
+  employer         : ""
+  uri              : 
   email            : "parameterfreak@gmail.com" 
 
   # Academic websites
