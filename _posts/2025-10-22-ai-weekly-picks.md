@@ -42,7 +42,7 @@ tags:
 - 데모: [https://huggingface.co/spaces/khang119966/DeepSeek-OCR-DEMO](https://huggingface.co/spaces/khang119966/DeepSeek-OCR-DEMO)
 - 코드저장소: [https://github.com/deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR)
 - 논문: [https://github.com/deepseek-ai/DeepSeek-OCR/blob/main/DeepSeek_OCR_paper.pdf](https://github.com/deepseek-ai/DeepSeek-OCR/blob/main/DeepSeek_OCR_paper.pdf)
-    > DeepSeek-OCR 논문은 기존의 텍스트 토큰 대신 픽셀 기반 이미지 입력을 사용하여 컴퓨터 비전과 대규모 언어 모델(LLM)을 통합하는 중요한 발전을 소개합니다. 이 접근 방식은 보다 효율적인 정보 압축을 달성하고 텍스트 기반 토큰화의 한계를 극복하는 것을 목표로 합니다.
+    >>> DeepSeek-OCR 논문은 기존의 텍스트 토큰 대신 픽셀 기반 이미지 입력을 사용하여 컴퓨터 비전과 대규모 언어 모델(LLM)을 통합하는 중요한 발전을 소개합니다. 이 접근 방식은 보다 효율적인 정보 압축을 달성하고 텍스트 기반 토큰화의 한계를 극복하는 것을 목표로 합니다.
     DeepSeek-OCR의 주요 측면과 혁신은 다음과 같습니다.  
       * 광학 압축: 핵심 아이디어는 이미지가 디지털 텍스트보다 텍스트 정보를 더 간결하게 표현하여 더 높은 압축률을 달성할 수 있다는 것입니다. 이 모델은 Fox 벤치마크에서 10배 압축률로 약 97%의 디코딩 정밀도를 달성하고 20배 압축에서도 유용한 동작을 보여 문서 처리에 필요한 토큰 수를 크게 줄입니다.  
       * 향상된 효율성 및 컨텍스트 창: 텍스트를 더 적은 "비전 토큰"으로 압축함으로써 DeepSeek-OCR은 LLM에 대해 더 짧은 컨텍스트 창과 더 높은 계산 효율성을 가능하게 합니다. 이는 기존 텍스트 토큰과 관련된 기하급수적으로 증가하는 컴퓨팅 성능 및 메모리 소비 없이 매우 긴 문서를 처리하는 데 중요합니다.  
@@ -50,6 +50,7 @@ tags:
       * 아키텍처: 이 시스템은 DeepEncoder와 Deepseek3B-MoE를 기반으로 구축된 텍스트 생성기의 두 가지 주요 부분으로 구성됩니다. DeepEncoder는 이미지 분할을 위한 Meta의 SAM(Segment Anything Model) 및 이미지와 텍스트를 연결하기 위한 OpenAI의 CLIP과 같은 구성 요소를 활용하며, 이미지 토큰을 대폭 줄이기 위한 16배 압축기를 함께 사용합니다.  
       * 광범위한 콘텐츠 처리: 이 비전 지향 접근 방식을 통해 LLM은 자동 회귀 텍스트 토큰화에서 종종 제한되는 양방향 주의를 통해 굵은 텍스트나 색상 있는 텍스트 및 임의의 이미지와 같은 광범위한 콘텐츠를 처리할 수 있습니다.  
       * 실용적인 응용: DeepSeek-OCR은 훨씬 적은 수의 토큰으로 벤치마크에서 GOT-OCR2.0 및 MinerU2.0과 같은 다른 모델을 능가하는 높은 실용적 가치를 가지고 있습니다. 대량의 학습 데이터를 효율적으로 생성하고 대규모 문서 이해 및 다중 모드 모델 학습을 지원할 수 있습니다.  
+    
     전반적으로 DeepSeek-OCR은 AI에서 통합된 입력 양식으로의 전환을 나타내며, 잠재적으로 AI 파이프라인을 간소화하고 다양한 응용 분야를 위한 종단 간 다중 모드 AI 시스템에서 새로운 기회를 열어줍니다.  
     
 -
