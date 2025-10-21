@@ -10,10 +10,11 @@ tags:
 # DGX-Spark
 
 - 리뷰: [https://lmsys.org/blog/2025-10-13-nvidia-dgx-spark/](https://lmsys.org/blog/2025-10-13-nvidia-dgx-spark/)
-    <code>
+    
+    <pre><code>
     NVIDIA DGX Spark는 로컬 AI 추론을 위해 설계된 소형 올인원 데스크톱 워크스테이션으로, 슈퍼컴퓨팅급 성능을 더 작은 폼팩터에 담았습니다.   
     샴페인 골드 마감의 풀메탈 섀시를 특징으로 하며, 20개의 CPU 코어를 통합하고 최대 1 PFLOP의 희소 FP4 텐서 성능을 제공하는 NVIDIA GB10 Grace Blackwell 슈퍼칩으로 구동됩니다. 이 시스템은 128GB의 일관된 통합 시스템 메모리를 자랑하여 데이터 전송 오버헤드 없이 대규모 모델을 직접 실행할 수 있으며, 더 큰 모델의 분산 추론을 위해 다른 DGX Spark 장치와 상호 연결할 수 있습니다. LPDDR5x 메모리 대역폭으로 인해 전체 크기의 개별 GPU 시스템에 비해 원시 성능은 제한되지만, 특히 소규모 모델 및 추측 디코딩을 사용한 프로토타이핑, 모델 실험 및 엣지-AI 연구에 탁월합니다. DGX Spark는 로컬 모델 서빙, 코딩 지원 및 AI 실험을 위한 개발자 친화적인 플랫폼으로 제시되며 접근성, 효율성 및 우아한 엔지니어링을 강조합니다.
-    </code>
+    </code></pre>
     
 - 벤치마크: [https://docs.google.com/spreadsheets/d/1SF1u0J2vJ-ou-R_Ry1JZQ0iscOZL8UKHpdVFr85tNLU/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1SF1u0J2vJ-ou-R_Ry1JZQ0iscOZL8UKHpdVFr85tNLU/edit?gid=0#gid=0)
 
