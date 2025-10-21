@@ -19,7 +19,7 @@ tags:
 
 # nanochat
 
-<img src="/images/post/weekly-picks/251022-1.png" alt="nanochat" width="100"/>
+<img src="/images/post/weekly-picks/251022-1.png" alt="nanochat" width="200"/>
 
 - X: [https://x.com/karpathy/status/1977755427569111362](https://x.com/karpathy/status/1977755427569111362)
 - 코드저장소: [https://github.com/karpathy/nanochat](https://github.com/karpathy/nanochat)
@@ -30,24 +30,19 @@ tags:
 
 - Youtube: [https://youtu.be/lXUZvyajciY?si=SeM2PjVTY3ouvg9z](https://youtu.be/lXUZvyajciY?si=SeM2PjVTY3ouvg9z)
 - 스크립트: [https://www.dwarkesh.com/p/andrej-karpathy?utm_campaign=post&utm_medium=web](https://www.dwarkesh.com/p/andrej-karpathy?utm_campaign=post&utm_medium=web)
-    
-    ```
-    Andrej Karpathy는 인간과 같이 기능하는 에이전트를 개발하는 데 상당한 작업이 필요하다는 점을 들어 AGI(인공 일반 지능)가 아직 약 10년은 더 걸릴 것이라고 생각합니다. 그는 현재의 강화 학습 방법이 신중한 검토와 복잡한 사고 과정을 통해 학습하는 인간과 달리, 보상을 할당하는 방식이 비효율적이고 잡음이 많아 "끔찍하다"고 주장합니다. 또한 Karpathy는 대규모 언어 모델이 강력하지만 새로운 코드를 다루거나 지식을 미묘한 방식으로 통합하는 데 어려움을 겪는 등 여전히 인지적 결함이 있다고 지적합니다. 이로 인해 완전한 자율 AI 엔지니어링보다는 자동 완성에 더 유용하다고 봅니다.
-    ```
+    > Andrej Karpathy는 인간과 같이 기능하는 에이전트를 개발하는 데 상당한 작업이 필요하다는 점을 들어 AGI(인공 일반 지능)가 아직 약 10년은 더 걸릴 것이라고 생각합니다. 그는 현재의 강화 학습 방법이 신중한 검토와 복잡한 사고 과정을 통해 학습하는 인간과 달리, 보상을 할당하는 방식이 비효율적이고 잡음이 많아 "끔찍하다"고 주장합니다. 또한 Karpathy는 대규모 언어 모델이 강력하지만 새로운 코드를 다루거나 지식을 미묘한 방식으로 통합하는 데 어려움을 겪는 등 여전히 인지적 결함이 있다고 지적합니다. 이로 인해 완전한 자율 AI 엔지니어링보다는 자동 완성에 더 유용하다고 봅니다.
     
 
 ---
 
 # DeepSeek-OCR
 
-<img src="/images/post/weekly-picks/251022-2.png" alt="deepseek-ocr" width="100"/>
+<img src="/images/post/weekly-picks/251022-2.png" alt="deepseek-ocr" width="200"/>
 
 - 데모: [https://huggingface.co/spaces/khang119966/DeepSeek-OCR-DEMO](https://huggingface.co/spaces/khang119966/DeepSeek-OCR-DEMO)
 - 코드저장소: [https://github.com/deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR)
 - 논문: [https://github.com/deepseek-ai/DeepSeek-OCR/blob/main/DeepSeek_OCR_paper.pdf](https://github.com/deepseek-ai/DeepSeek-OCR/blob/main/DeepSeek_OCR_paper.pdf)
-    
-    ```
-    DeepSeek-OCR 논문은 기존의 텍스트 토큰 대신 픽셀 기반 이미지 입력을 사용하여 컴퓨터 비전과 대규모 언어 모델(LLM)을 통합하는 중요한 발전을 소개합니다. 이 접근 방식은 보다 효율적인 정보 압축을 달성하고 텍스트 기반 토큰화의 한계를 극복하는 것을 목표로 합니다.
+    > DeepSeek-OCR 논문은 기존의 텍스트 토큰 대신 픽셀 기반 이미지 입력을 사용하여 컴퓨터 비전과 대규모 언어 모델(LLM)을 통합하는 중요한 발전을 소개합니다. 이 접근 방식은 보다 효율적인 정보 압축을 달성하고 텍스트 기반 토큰화의 한계를 극복하는 것을 목표로 합니다.
     
     DeepSeek-OCR의 주요 측면과 혁신은 다음과 같습니다.
       * 광학 압축: 핵심 아이디어는 이미지가 디지털 텍스트보다 텍스트 정보를 더 간결하게 표현하여 더 높은 압축률을 달성할 수 있다는 것입니다. 이 모델은 Fox 벤치마크에서 10배 압축률로 약 97%의 디코딩 정밀도를 달성하고 20배 압축에서도 유용한 동작을 보여 문서 처리에 필요한 토큰 수를 크게 줄입니다.
@@ -58,7 +53,6 @@ tags:
       * 실용적인 응용: DeepSeek-OCR은 훨씬 적은 수의 토큰으로 벤치마크에서 GOT-OCR2.0 및 MinerU2.0과 같은 다른 모델을 능가하는 높은 실용적 가치를 가지고 있습니다. 대량의 학습 데이터를 효율적으로 생성하고 대규모 문서 이해 및 다중 모드 모델 학습을 지원할 수 있습니다.
     
     전반적으로 DeepSeek-OCR은 AI에서 통합된 입력 양식으로의 전환을 나타내며, 잠재적으로 AI 파이프라인을 간소화하고 다양한 응용 분야를 위한 종단 간 다중 모드 AI 시스템에서 새로운 기회를 열어줍니다.
-    ```
     
 -
 
