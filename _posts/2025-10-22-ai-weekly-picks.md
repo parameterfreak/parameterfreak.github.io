@@ -32,7 +32,7 @@ tags:
 
 - Youtube: [https://youtu.be/lXUZvyajciY?si=SeM2PjVTY3ouvg9z](https://youtu.be/lXUZvyajciY?si=SeM2PjVTY3ouvg9z)
 - 스크립트: [https://www.dwarkesh.com/p/andrej-karpathy?utm_campaign=post&utm_medium=web](https://www.dwarkesh.com/p/andrej-karpathy?utm_campaign=post&utm_medium=web)  
-- 스크립트(번역-진행중): [https://docs.google.com/document/d/1B2UwKo_VHAZv_cVwmkIPri_WdbrSSisaJuSyZPV0-s0/edit?usp=sharing](https://docs.google.com/document/d/1B2UwKo_VHAZv_cVwmkIPri_WdbrSSisaJuSyZPV0-s0/edit?usp=sharing)  
+- 스크립트(한글-진행중): [https://docs.google.com/document/d/1B2UwKo_VHAZv_cVwmkIPri_WdbrSSisaJuSyZPV0-s0/edit?usp=sharing](https://docs.google.com/document/d/1B2UwKo_VHAZv_cVwmkIPri_WdbrSSisaJuSyZPV0-s0/edit?usp=sharing)  
     >
     Andrej Karpathy는 인간과 같이 기능하는 에이전트를 개발하는 데 상당한 작업이 필요하다는 점을 들어 AGI(인공 일반 지능)가 아직 약 10년은 더 걸릴 것이라고 생각합니다. 그는 현재의 강화 학습 방법이 신중한 검토와 복잡한 사고 과정을 통해 학습하는 인간과 달리, 보상을 할당하는 방식이 비효율적이고 잡음이 많아 "끔찍하다"고 주장합니다. 또한 Karpathy는 대규모 언어 모델이 강력하지만 새로운 코드를 다루거나 지식을 미묘한 방식으로 통합하는 데 어려움을 겪는 등 여전히 인지적 결함이 있다고 지적합니다. 이로 인해 완전한 자율 AI 엔지니어링보다는 자동 완성에 더 유용하다고 봅니다.
     
