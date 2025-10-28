@@ -62,7 +62,13 @@ tags:
   <img src="/images/post/weekly-picks/251029-2.png" alt="ray within the ai compute software stack" width="450"/>
 
   PyTorch 재단에 Ray가 합류했습니다. Ray는 AI 워크로드를 대규모로 처리하기 위한 오픈소스 분산 컴퓨팅 프레임워크입니다. 이번 통합은 AI 컴퓨팅 스택을 통합하고 개발자가 AI 모델을 더 쉽게 확장하고 배포할 수 있도록 돕는 것을 목표로 합니다.
-    
+
+## MiniMax M2
+- [https://huggingface.co/MiniMaxAI/MiniMax-M2](https://huggingface.co/MiniMaxAI/MiniMax-M2)  
+
+  <img src="/images/post/weekly-picks/251029-3.jpeg" alt="minimax-m2 bench" width="450"/>
+
+  claude Sonnet 가격의 8%에 약 2배 빠른 속도
 
 ## 임베딩 모델의 파인튜닝
 
