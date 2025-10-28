@@ -17,7 +17,7 @@ tags:
     
     - [https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
         
-      <img src="/images/post/weekly-picks/251029-1.png" alt="agent+skills+virtual machine" width="250"/>
+      <img src="/images/post/weekly-picks/251029-1.png" alt="agent+skills+virtual machine" width="350"/>
       
       Anthropic은 지침, 스크립트 및 리소스를 폴더로 구성하여 전문 AI 에이전트를 만드는 새로운 방법인 "Agent Skills"을 도입했습니다. 이러한 Skill을 통해 Claude와 같은 범용 에이전트는 신입사원을 위한 온보딩 가이드와 유사하게 도메인별 전문 지식을 동적으로 로드할 수 있습니다. Skill은 점진적 공개를 위해 메타데이터와 함께 SKILL.md 파일을 사용하여 Claude가 관련 정보에 효율적으로 액세스하고 PDF 조작과 같은 작업을 위한 코드를 실행할 수도 있도록 합니다. 이 접근 방식은 신뢰할 수 없는 소스의 Skill을 감사하라는 보안 권장 사항과 함께 에이전트 기능, 확장성 및 이식성을 향상시킵니다.
         
@@ -59,7 +59,7 @@ tags:
     
 - [https://pytorch.org/blog/pytorch-foundation-welcomes-ray-to-deliver-a-unified-open-source-ai-compute-stack/](https://pytorch.org/blog/pytorch-foundation-welcomes-ray-to-deliver-a-unified-open-source-ai-compute-stack/)
     
-  <img src="/images/post/weekly-picks/251029-2.png" alt="ray within the ai compute software stack" width="250"/>
+  <img src="/images/post/weekly-picks/251029-2.png" alt="ray within the ai compute software stack" width="350"/>
 
   PyTorch 재단에 Ray가 합류했습니다. Ray는 AI 워크로드를 대규모로 처리하기 위한 오픈소스 분산 컴퓨팅 프레임워크입니다. 이번 통합은 AI 컴퓨팅 스택을 통합하고 개발자가 AI 모델을 더 쉽게 확장하고 배포할 수 있도록 돕는 것을 목표로 합니다.
     
