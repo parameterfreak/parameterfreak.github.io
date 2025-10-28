@@ -7,7 +7,9 @@ tags:
   - News
 ---
 
-# DGX-Spark
+# AI Weekly Picks(20251022)
+
+## DGX-Spark
 
 - 리뷰: [https://lmsys.org/blog/2025-10-13-nvidia-dgx-spark/](https://lmsys.org/blog/2025-10-13-nvidia-dgx-spark/)  
     >
@@ -19,7 +21,7 @@ tags:
 
 ---
 
-# nanochat
+## nanochat
 
 <img src="/images/post/weekly-picks/251022-1.png" alt="nanochat" width="200"/>
 
@@ -28,7 +30,7 @@ tags:
 
 ---
 
-# AGI is still a decade away
+## AGI is still a decade away
 
 - Youtube: [https://youtu.be/lXUZvyajciY?si=SeM2PjVTY3ouvg9z](https://youtu.be/lXUZvyajciY?si=SeM2PjVTY3ouvg9z)
 - 스크립트: [https://www.dwarkesh.com/p/andrej-karpathy?utm_campaign=post&utm_medium=web](https://www.dwarkesh.com/p/andrej-karpathy?utm_campaign=post&utm_medium=web)  
@@ -39,7 +41,7 @@ tags:
 
 ---
 
-# DeepSeek-OCR
+## DeepSeek-OCR
 
 <img src="/images/post/weekly-picks/251022-2.png" alt="deepseek-ocr" width="200"/>
 
