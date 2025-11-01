@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "ko-KR"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "The Daily AI"
+title                    : "parameterfreak"
 title_separator          : "-"
 name                     : &name "parameterfreak"
 description              : &description "Obsessively exploring AI, one parameter at a time"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : ""
   pronouns         : # example: "she/her"  
-  bio              : "AI Research engineer"
+  bio              : "Research notes"
   location         : "Seoul, Korea"
   employer         : 
   uri              : 

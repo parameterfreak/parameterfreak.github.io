@@ -8,17 +8,27 @@ author_profile: true
 #  - /about.html
 ---
 
-저는 인공지능 연구자이자 소프트웨어 엔지니어로 Python과 Go를 주로 이용하고 있으며, 딥러닝, 자연어처리의 연구와 LLM 기반 소프트웨어 개발에 참여를 하고 있습니다. 
+About
 
-# Interests
+이곳은 AI와 소프트웨어 개발에 대한 연구와 실험을 기록하는 공간입니다.
+딥러닝, 자연어처리, MLOps를 중심으로 학습한 내용, 프로젝트 과정, 
+그리고 실험 결과들을 정리하고 공유합니다.
+
+What You'll Find Here
+* Deep Learning & NLP 연구 노트
+* LLM 기반 프로젝트 개발 기록
+* MLOps 실험과 도구 탐구
+* Python/Go 기반 소프트웨어 개발 경험
+
+Interests
 * Deep Learning
 * NLP
 * MLOps
 
-# Resarches
+Current Research
 * Deep Learning (NLP/LLM)
 * MLOps
 
-# Projects
+Projects
 * Chatbot
 * DataProc
