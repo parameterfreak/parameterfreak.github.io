@@ -8,6 +8,8 @@ tags:
   - Reference
 ---
 
+# AI Weekly Picks(20251217)
+
 # Towards Understanding the Importance of Shortcut Connections in Residual Networks
 - [https://arxiv.org/pdf/1909.04653](https://arxiv.org/pdf/1909.04653)
 - ResNet에서 shrotcut connections이 훈련에 미치는 영향에 대한 연구
