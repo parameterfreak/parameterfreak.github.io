@@ -1,5 +1,5 @@
 ---
-title: 'korean-law-embedding-research-notes-2025-12-07-12-27'
+title: 'korean-law-embedding-research-notes-2025-12-14-12-27'
 date: 2025-12-27
 permalink: /posts/2025/12/weekly-research-notes-2025-12-14-12-27/
 tags:
