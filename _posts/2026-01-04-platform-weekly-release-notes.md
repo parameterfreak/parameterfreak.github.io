@@ -24,7 +24,7 @@ tags:
 **주요 성과**:
 - **문제 발견 및 해결**:
   - 초기: 로컬에서 artifact 업로드 실패 (MinIO S3 API가 클러스터 내부에만 노출)
-  - 해결: MinIO S3 API 외부 Ingress 생성 (`minio-api.parameterfreak.com`)
+  - 해결: MinIO S3 API 외부 Ingress 생성 (`minio-api.**********.com`)
 - **대형 모델 지원**:
   - 파일 크기 제한 제거 (`proxy-body-size: "0"`)
   - 타임아웃 1시간 설정 (수십 GB 모델 전송 대응)
@@ -99,21 +99,21 @@ artifactRoot: "s3://mlflow/"
 **구현 완료**: 주요 인프라 서비스 외부 접근 설정
 
 **MinIO**:
-- **Console Ingress** (`minio.parameterfreak.com`): 웹 UI 접근
-- **S3 API Ingress** (`minio-api.parameterfreak.com`): Artifact 업로드 엔드포인트
+- **Console Ingress** (`minio..**********..com`): 웹 UI 접근
+- **S3 API Ingress** (`minio-api..**********..com`): Artifact 업로드 엔드포인트
   - 대형 파일 지원 설정
   - 타임아웃 최적화
 
 **Grafana**:
-- **Dashboard Ingress** (`grafana.parameterfreak.com`): 모니터링 대시보드 접근
+- **Dashboard Ingress** (`grafana..**********..com`): 모니터링 대시보드 접근
 
 **DNS 설정**:
 ```
-argocd.parameterfreak.com      → **********
-mlflow.parameterfreak.com      → **********
-grafana.parameterfreak.com     → **********
-minio.parameterfreak.com       → **********
-minio-api.parameterfreak.com   → **********
+argocd..**********..com      → **********
+mlflow..**********..com      → **********
+grafana..**********..com     → **********
+minio..**********..com       → **********
+minio-api..**********..com   → **********
 ```
 
 **관련 커밋**: `d8aaf1f`, `48b8f9d`, `93d47fc`
@@ -331,11 +331,11 @@ examples/mlflow-quickstart/__pycache__/
 
 | 서비스 | URL | 포트 | 용도 |
 |--------|-----|------|------|
-| ArgoCD | http://argocd.parameterfreak.com | 80 | GitOps 배포 관리 |
-| MLflow | http://mlflow.parameterfreak.com | 80 | 실험 추적 및 모델 레지스트리 |
-| Grafana | http://grafana.parameterfreak.com | 80 | 모니터링 대시보드 |
-| MinIO Console | http://minio.parameterfreak.com | 80 | 스토리지 관리 UI |
-| MinIO S3 API | http://minio-api.parameterfreak.com | 80 | Artifact 업로드 엔드포인트 |
+| ArgoCD | http://argocd..**********..com | 80 | GitOps 배포 관리 |
+| MLflow | http://mlflow..**********..com | 80 | 실험 추적 및 모델 레지스트리 |
+| Grafana | http://grafana..**********..com | 80 | 모니터링 대시보드 |
+| MinIO Console | http://minio..**********..com | 80 | 스토리지 관리 UI |
+| MinIO S3 API | http://minio-api..**********..com | 80 | Artifact 업로드 엔드포인트 |
 
 **라우팅 구조**:
 ```
@@ -345,7 +345,7 @@ examples/mlflow-quickstart/__pycache__/
     ↓
 Nginx Ingress Controller
     ↓
-Host 기반 라우팅 (mlflow.parameterfreak.com → MLflow Service)
+Host 기반 라우팅 (mlflow..**********..com → MLflow Service)
 ```
 
 ---
@@ -567,8 +567,8 @@ nginx.ingress.kubernetes.io/client-body-timeout: "3600"
 **로컬 환경**:
 ```python
 import os
-os.environ['MLFLOW_TRACKING_URI'] = 'http://mlflow.parameterfreak.com'
-os.environ['MLFLOW_S3_ENDPOINT_URL'] = 'http://minio-api.parameterfreak.com'
+os.environ['MLFLOW_TRACKING_URI'] = 'http://mlflow..**********..com'
+os.environ['MLFLOW_S3_ENDPOINT_URL'] = 'http://minio-api..**********..com'
 os.environ['AWS_ACCESS_KEY_ID'] = 'your-access-key'
 os.environ['AWS_SECRET_ACCESS_KEY'] = 'your-secret-key'
 ```
@@ -583,7 +583,7 @@ env:
 ```
 
 **차이점**:
-- 로컬: 외부 도메인 사용 (`minio-api.parameterfreak.com`)
+- 로컬: 외부 도메인 사용 (`minio-api..**********..com`)
 - 클러스터: 내부 서비스명 사용 (`.svc.cluster.local`)
 
 ---
