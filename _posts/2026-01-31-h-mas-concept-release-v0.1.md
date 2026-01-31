@@ -1,5 +1,5 @@
 ---
-title: '[Project] LLM 서빙 효율화에 대한 고민: H-MAS 설계 기록'
+title: 'LLM 서빙 효율화에 대한 고민: H-MAS 설계 기록'
 date: 2026-01-31
 permalink: /posts/2026/01/h-mas-concept-release-v0.1/
 tags:
