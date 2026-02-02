@@ -1,11 +1,10 @@
 ---
-#permalink: /
-permalink: /about/
+permalink: /
 title: "About"
 author_profile: false
-#redirect_from: 
-#  - /about/
-#  - /about.html
+redirect_from: 
+  - /about/
+  - /about.html
 ---
 
 이곳은 AI와 소프트웨어 개발에 대한 연구와 실험을 기록하는 공간입니다.  
