@@ -23,11 +23,11 @@ repository               : "parameterfreak/parameterfreak.github.io"
 author:
   # Biographic information
 #  avatar           : "profile.png"
-  avatar           : ""
-  name             : ""
+  avatar           : 
+  name             : 
   pronouns         : # example: "she/her"  
-  bio              : "Research notes"
-  location         : "Seoul, Korea"
+  bio              : 
+  location         : 
   employer         : 
   uri              : 
   email            : "parameterfreak@gmail.com" 
