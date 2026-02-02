@@ -40,3 +40,22 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* Custom: 글씨 크기 및 간격 조정 */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 0.3em;
+}
+
+.page__content {
+  p, li {
+    font-size: 0.9em;
+  }
+  
+  p {
+    margin-bottom: 0.8em;
+  }
+}
+
+ul li, ol li {
+  margin-bottom: 0.3em;
+}
