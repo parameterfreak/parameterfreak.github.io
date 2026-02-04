@@ -15,4 +15,6 @@ Projects:
 - [Misc](/categories/#misc): AI Weekly Picks, DART-MCP 등
 
 Contact:
-- parameterfreak@gmail.com
+- [github.com/parameterfreak](https://github.com/parameterfreak)
+- [x.com/parameterfreak](https://x.com/parameterfreak)
+- [parameterfreak@gmail.com](mailto:parameterfreak@gmail.com)
