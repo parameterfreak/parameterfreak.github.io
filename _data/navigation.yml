@@ -23,6 +23,9 @@ main:
   #- title: "About"
   #  url: /about/
 
+  - title: "/"
+    url: /
+
   - title: "Posts"
     url: /posts/
     
