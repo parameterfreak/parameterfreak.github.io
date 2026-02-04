@@ -2,6 +2,8 @@
 title: 'dart-mcp-weekly-release-notes-2025-11-02-11-08'
 date: 2025-11-08
 permalink: /posts/2025/11/dart-mcp-weekly-release-notes-11-08/
+categories:
+  - Misc
 tags:
   - DART-MCP
   - MCP

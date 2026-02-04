@@ -2,6 +2,8 @@
 title: 'korean-law-embedding-research-notes-2025-11-25-12-06'
 date: 2025-12-06
 permalink: /posts/2025/12/weekly-research-notes-2025-11-25-12-06/
+categories:
+  - Korean-Law-Embedding
 tags:
   - embedding
   - fine-tuning

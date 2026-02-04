@@ -2,6 +2,8 @@
 title: 'dataproc-weekly-release-notes-2025-11-09-11-15'
 date: 2025-11-16
 permalink: /posts/2025/11/weekly-release-notes-2025-11-09-11-15/
+categories:
+  - DataProc
 tags:
   - DataProc
   - RAG

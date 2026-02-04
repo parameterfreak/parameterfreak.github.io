@@ -1,7 +1,9 @@
 ---
 title: 'platform-weekly-release-notes-2025-12-28-2026-01-03'
 date: 2026-01-04
-permalink: /posts/2026/01/plotform-weekly-release-notes-2025-12-28-2026-01-04/
+permalink: /posts/2026/01/platform-weekly-release-notes-2025-12-28-2026-01-04/
+categories:
+  - H-MAS
 tags:
   - platform 
 ---

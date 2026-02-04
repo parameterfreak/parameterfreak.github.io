@@ -2,6 +2,8 @@
 title: 'AI Weekly Picks(20251105)'
 date: 2025-11-05
 permalink: /posts/2025/11/ai-weekly-picks-2025-11-05/
+categories:
+  - Misc
 tags:
   - AI
   - News

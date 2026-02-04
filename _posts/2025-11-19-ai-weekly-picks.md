@@ -2,6 +2,8 @@
 title: 'AI Weekly Picks(20251119)'
 date: 2025-11-19
 permalink: /posts/2025/11/ai-weekly-picks-2025-11-19/
+categories:
+  - Misc
 tags:
   - AI
   - News
