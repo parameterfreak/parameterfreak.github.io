@@ -7,9 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-**Designing and building scalable, knowledge-aware, and autonomous AI systems.**
-
-이 블로그는 지능형 AI 시스템을 설계하고 구축하는 과정에서 얻은 연구 경험과 인사이트를 기록합니다.
+*Designing and building scalable, knowledge-aware, and autonomous AI systems.*
 
 ---
 
