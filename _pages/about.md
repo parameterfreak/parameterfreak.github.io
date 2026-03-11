@@ -1,13 +1,11 @@
 ---
 permalink: /
-# title: "About"
+title: "Intelligent AI Systems"
 author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-## Intelligent AI Systems
 
 **Designing and building scalable, knowledge-aware, and autonomous AI systems.**
 
