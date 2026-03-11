@@ -11,7 +11,7 @@ tags:
 ---
 
 * [Top embedding models on the MTEB leaderboard](https://modal.com/blog/mteb-leaderboard-article) : MTEB(Massive Text Embedding Benchmark) 리더보드를 바탕으로 목적에 맞는 임베딩 모델 선택 기준과 현재 상위권에 있는 주요 모델(Qwen3, BGE-M3 등)들의 특징을 소개하는 가이드
-* [Introducing RTEB: A New Gold Standard for Evaluating Retrieval Models 2025 | An Exclusive Report - CerebalAiCerebral Ai - Corrected Header](https://thecerebralai.com/introducing-rteb/) : 오픈소스 생태계와 RAG, 시맨틱 검색을 위한 새로운 기준점이 될 AI 검색 모델 평가를 위한 새로운 표준 벤치마크인 RTEB의 도입배경과 특징을 소개하는 글
+* [Introducing RTEB: A New Gold Standard for Evaluating Retrieval Models 2025 : An Exclusive Report - CerebalAiCerebral Ai - Corrected Header](https://thecerebralai.com/introducing-rteb/) : 오픈소스 생태계와 RAG, 시맨틱 검색을 위한 새로운 기준점이 될 AI 검색 모델 평가를 위한 새로운 표준 벤치마크인 RTEB의 도입배경과 특징을 소개하는 글
 * [Disaggregated Serving in TensorRT LLM — TensorRT LLM](https://nvidia.github.io/TensorRT-LLM/1.2.0rc1/blogs/tech_blog/blog5_Disaggregated_Serving_in_TensorRT-LLM.html) : LLM 추론의 Context(Prefill) 처리와 Generation(Decode) 생성을 서로 다른 GPU 풀로 분리(Disaggregated Serving)해 간섭을 줄이고 응답시간(TTFT, TPOT)을 최적화하는 TensorRT-LLM의 구조와 성능 분석을 담은 기술 블로그
 * [AI Is a Five-Layer Cake](https://x.com/nvidia/status/2031311890752704790) : 컴퓨팅 환경의 근본적인 변화에 맞춰 컴퓨팅 스택을 5단계 계층(에너지, 칩, 인프라, 모델, 애플리케이션)으로 나누어 구조를 설명하는 NVIDIA의 포스트
 * [Production LLM serving on Kubernetes with KServe and llm-d](https://x.com/RedHat_AI/status/2031405209310683585) : KServe(Control Plane)와 llm-d(Data Plane)를 결합하여 Kubernetes 환경에서 vLLM 기반 대규모 언어 모델(LLM)을 분산 추론 및 프로덕션 수준으로 서빙하는 아키텍처와 패턴을 소개하는 포스트
