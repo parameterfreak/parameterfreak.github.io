@@ -1,7 +1,7 @@
 ---
-title: 'AI Daily Picks(20260311)'
+title: 'AI Weekly Picks(11주차)'
 date: 2026-03-11
-permalink: /posts/2026/03/ai-daily-picks-2026-03-11/
+permalink: /posts/2026/03/ai-weekly-picks-202611/
 categories:
   - Misc
 tags:
@@ -9,6 +9,8 @@ tags:
   - News
   - Reference
 ---
+
+# AI Daily Picks(20260312)
 
 # AI Daily Picks(20260311)
 
