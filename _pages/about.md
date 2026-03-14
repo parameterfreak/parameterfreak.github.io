@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "AI Systems for Autonomous Intelligence"
+#title: "AI Systems for Autonomous Intelligence"
 author_profile: false
 redirect_from: 
   - /about/
