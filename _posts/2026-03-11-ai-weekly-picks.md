@@ -21,12 +21,12 @@ tags:
   * 앞으로 검색 최적화 트렌드는 기존의 키워드 중심 SEO에서 벗어나 질문에 대한 답변(AEO) 및 생성형 엔진 최적화(GEO) 방향으로 진화하게 될 것임
   * AI 에이전트에게 지속적으로 선택받기 위해서는 퀄리티 높은 상품 데이터뿐만 아니라, 고객과의 장기적 관계를 구축하는 '데이터 기반 CRM' 역량과 브랜드 신뢰도가 무엇보다 중요함
 
-* [SGLang Destroys vLLM: 3x Faster + 40% Cheaper (2025 H800 Benchmarks) | LLM Practical Experience Hub](https://langcopilot.com/posts/2025-07-07-sglang-disaggregated-llm-inference-architecture-pe)
+* [SGLang Destroys vLLM: 3x Faster + 40% Cheaper (2025 H800 Benchmarks) : LLM Practical Experience Hub](https://langcopilot.com/posts/2025-07-07-sglang-disaggregated-llm-inference-architecture-pe)
   * SGLang는 기존 vLLM 대비 3배 빠른 추론(Inference) 속도와 40%의 GPU 비용 절감을 달성한 차세대 대형 언어 모델 추론 아키텍처임
   * 연산 중심의 Prefill 단계와 메모리 중심의 Decode 단계를 분리(Disaggregated Inference)하여, 각 단계의 병목 현상을 해소하고 자원 활용 효율을 극대화함
   * 대규모 KV 캐시 전송으로 인한 지연 시간을 해결하기 위해 Mooncake 엔진 기반의 RDMA(Remote Direct Memory Access) 통신 기술과 상태 머신 스케줄링을 적극 도입함
 
-* [Inference stacks compared: vLLM, TGI, TensorRT-LLM, llama.cpp, and SGLang | Maniac](https://www.maniac.ai/blog/inference-stacks-vllm-tgi-tensorrt)
+* [Inference stacks compared: vLLM, TGI, TensorRT-LLM, llama.cpp, and SGLang : Maniac](https://www.maniac.ai/blog/inference-stacks-vllm-tgi-tensorrt)
   * 다양한 LLM 추론 스택(vLLM, TGI, TensorRT-LLM, llama.cpp, SGLang)을 목표 지연 시간(Latency) 및 운영 환경에 맞춰 선택하기 위한 가이드를 제공함
   * vLLM/TGI는 생태계 호환성과 처리량(Throughput)이 중요할 때, TensorRT-LLM은 최고 수준의 성능 최적화가 필요할 때, llama.cpp는 경량화/엣지 배포에, SGLang는 복잡한 프롬프트나 에이전틱 시스템 처리에 강점을 보임
   * 성공적인 프로덕션 도입을 위해서는 오프라인 처리량뿐 아니라 실제 동시성 하에서의 p95 응답 지연 시간, 긴 컨텍스트에서의 메모리 동작, 그리고 장애 대응(Observability) 역량을 전반적으로 평가해야 함
