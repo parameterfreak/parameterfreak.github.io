@@ -10,6 +10,20 @@ tags:
   - Reference
 ---
 
+
+# AI Daily Picks(20260317)
+* [SGLang v0.4: Zero-Overhead Batch Scheduler, Cache-Aware Load Balancer, Faster Structured Outputs](https://lmsys.org/blog/2024-12-04-sglang-v0-4/)
+  * Zero-overhead batch scheduler 도입으로 CPU 스케줄링과 GPU 연산을 중첩 처리하여 처리량(throughput)을 1.1배 향상시켰습니다.
+  * Cache-aware load balancer를 통해 워커(worker)의 KV 캐시 적중률을 예측 및 라우팅하여 최대 1.9배 처리량 증가와 3.8배 캐시 적중률 향상을 달성했습니다.
+  * DeepSeek 모델을 위한 Data parallelism attention(DP Attention)을 구현하여 중복된 KV 캐시 메모리 사용을 줄이고 디코딩 처리량을 최대 1.9배 높였습니다.
+  * XGrammar 백엔드 연동을 통해 JSON 디코딩과 같은 구조화된 출력(Structured Outputs) 생성 속도를 기존 대비 최대 10배 이상 가속화했습니다.
+
+* [Mastering LLM Techniques: Inference Optimization](https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization)
+  * LLM 추론은 고도의 병렬 처리가 가능한 프리필(prefill) 단계와 메모리 대역폭이 제한되는 자동 회귀적 디코딩(decode) 단계로 나뉩니다.
+  * 디코딩 단계 최적화를 위한 KV(Key-Value) 캐싱은 메모리 사용량이 많으나, PagedAttention 기술을 통해 KV 캐시를 비연속적 공간에 저장하여 메모리 낭비를 줄이고 배치 크기(throughput)를 향상시킬 수 있습니다.
+  * 파이프라인, 텐서 및 시퀀스 병렬 처리 기법과 MQA, GQA, FlashAttention 등 어텐션 메커니즘 최적화를 통해 GPU 당 메모리 풋프린트를 크게 줄일 수 있습니다.
+  * In-flight batching (동시 다중 요청 처리) 및 Speculative inference (추측 기반 병렬 실행)와 같은 향상된 모델 서빙 기법을 이용하면 처리량을 더욱 높일 수 있습니다.
+
 # AI Daily Picks(20260316)
 
 * [What Is Neocloud? Everything You Need to Know](https://phoenixnap.com/blog/neocloud)
