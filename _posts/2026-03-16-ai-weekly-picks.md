@@ -10,8 +10,29 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260318)
+
+* [Octen Series: Optimizing Embedding Models to #1 on RTEB Leaderboard - Octen Blog](https://octen-team.github.io/octen_blog/posts/octen-rteb-first-place/)
+  * MTEB가 새롭게 런칭한 RTEB(Retrieval Embedding Benchmark) 리더보드에서 1위를 달성한 Octen 임베딩 모델의 기법을 소개합니다.
+  * 법률, 금융, 의료, 코드 등 주요 산업 도메인 특성에 맞춘 합성 데이터를 선별적으로 구축하고 쿼리 다양성을 강화했습니다.
+  * Hard Negative 샘플링, Multi-Positive 데이터 활용, False Negative 실시간 필터링을 도입해 데이터 활용도와 판별 정확도를 높였습니다.
+  * Qwen3 기반의 LoRA 파인튜닝과 다중 GPU 간의 Negative 공유, 동적 배치 사이즈 조절을 통해 대규모 훈련의 효율성을 극대화했습니다.
+* [LLM 추론 최적화 완벽 가이드: vLLM, TensorRT-LLM, Speculative Decoding - Chaos and Order](https://www.youngju.dev/blog/llm/2026-03-14-llm-inference-optimization-vllm-tensorrt-speculative-decoding)
+  * LLM 서빙 시 메모리 활용을 높이기 위한 PagedAttention 기반 KV Cache 구조 및 Continuous Batching 등 vLLM의 고성능 추론 엔진 최적화 기술을 소개합니다.
+  * 복잡한 빌드 과정을 개선하고 최신 양자화(FP8 등) 및 병렬화 기법을 도입하여 추론 성능을 극대화한 NVIDIA TensorRT-LLM 1.0의 핵심 변화를 설명합니다.
+  * 빠르고 작은 드래프트 모델의 초안 생성을 활용해 품질 저하 없이 디코딩 속도를 비약적으로 높여주는 Speculative Decoding의 원리를 다룹니다.
+* [GitHub - hemingkx/SpeculativeDecodingPapers: 📰 Must-read papers and blogs on Speculative Decoding ⚡️](https://github.com/hemingkx/SpeculativeDecodingPapers)
+  * LLM 추론 속도 향상을 위한 핵심 기술인 Speculative Decoding과 관련된 중요 논문 및 블로그 포스트들을 모아둔 저장소입니다.
+  * 기본 개념부터 LLM, 다중 모달 모델, 확산 모델 등에 적용된 연구 사례들을 세부 카테고리별로 꼼꼼하게 분류하고 있습니다.
+  * 학술 논문뿐만 아니라 Huggingface, vLLM, TensorRT-LLM 등 실제 프레임워크에서의 최적화 기법과 주요 튜토리얼 링크를 함께 제공합니다.
+* [vLLM vs SGLang vs LMDeploy: Fastest LLM Inference Engine in 2026? - Prem AI Blog](https://blog.premai.io/vllm-vs-sglang-vs-lmdeploy-fastest-llm-inference-engine-in-2026/)
+  * 안정적인 프로덕션 표준 vLLM, 다중 턴 대화에 강점을 가지는 SGLang, 양자화 모델 서빙에 특화된 LMDeploy의 성능과 특징을 비교 분석합니다.
+  * SGLang은 RadixAttention 구조를 도입하여 KV 캐시 히트율을 대폭 개선함으로써 에이전트 워크플로우나 다중 턴 챗봇 환경에서 높은 효율성을 발휘합니다.
+  * 반면, LMDeploy는 TurboMind 아키텍처를 기반으로 양자화 모델(Int4 등) 구동 시 최소한의 초기 응답 지연 시간(TTFT)과 최고의 성능을 제공합니다.
+
 
 # AI Daily Picks(20260317)
+
 * [SGLang v0.4: Zero-Overhead Batch Scheduler, Cache-Aware Load Balancer, Faster Structured Outputs](https://lmsys.org/blog/2024-12-04-sglang-v0-4/)
   * Zero-overhead batch scheduler 도입으로 CPU 스케줄링과 GPU 연산을 중첩 처리하여 처리량(throughput)을 1.1배 향상시켰습니다.
   * Cache-aware load balancer를 통해 워커(worker)의 KV 캐시 적중률을 예측 및 라우팅하여 최대 1.9배 처리량 증가와 3.8배 캐시 적중률 향상을 달성했습니다.
