@@ -11,6 +11,7 @@ tags:
 ---
 
 # AI Daily Picks(20260315)
+
 * [OpenAI gpt-oss-safeguard · Ollama Blog](https://ollama.com/blog/gpt-oss-safeguard)
   * Ollama가 OpenAI 및 ROOST와 협력하여 안전성 분류 작업을 위한 20B/120B 파라미터 규모의 추론(Reasoning) 모델인 'gpt-oss-safeguard'를 Apache 2.0 라이선스로 공개함
   * 자체 정책 지침(Bring your own policy)을 해석하도록 설계되어 있어, 기존 LLM 입출력 필터링이나 콘텐츠 분류 등 다양한 신뢰 및 안전(Trust and Safety) 작업에 최소한의 엔지니어링으로 적용 가능함
@@ -37,6 +38,7 @@ tags:
   * 인배치(In-batch) 네거티브 샘플링을 활용한 검색 중심의 1단계 대조적 훈련과, 네거티브 샘플 없이 인스트럭션 튜닝(Instruction-Tuning) 기반으로 비검색 작업(분류, 클러스터링 등)을 결합하는 2단계 훈련 방식을 통해 범용적인 임베딩 성능을 극대화함
 
 # AI Daily Picks(20260314)
+
 * [X 쓰레드 정리: 심층 연구(Deep Research) 시스템 평가의 한계와 새로운 기준](https://x.com/allen_ai/status/2032189759985258812)
   * 심층 연구 에이전트의 주요 평가 방식인 '쌍대 선호도(pairwise preferences)'는 시스템 순위 산정에는 유용하지만 세부 지표 평가에는 신뢰하기 어렵다는 점을 지적함
   * 이를 개선하기 위해 지표별 특화된 인간의 어노테이션을 설계하고, 점수 일치율뿐 아니라 불일치 원인을 분석할 것을 권장
