@@ -10,6 +10,30 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260319)
+
+* [What are embedding models? A complete guide](https://www.openlayer.com/blog/post/what-are-embedding-models-complete-guide)
+  * 임베딩 모델은 텍스트, 이미지 등의 비정형 데이터를 숫자로 이루어진 벡터로 변환하여 데이터 간의 의미적 유사성을 계산할 수 있게 해주는 알고리즘입니다.
+  * 트랜스포머 아키텍처를 기반으로 토큰화와 어텐션 메커니즘을 사용하여 단어의 문맥적 의미를 정밀하게 파악하고 다차원 벡터 공간에 매핑합니다.
+  * RAG(검색 증강 생성) 파이프라인에서 사용자 질문과 가장 관련성이 높은 문서를 벡터 DB에서 빠르게 검색하여 LLM에 컨텍스트로 제공하는 핵심 엔진입니다.
+  * 보안성과 속도가 중요한 경우 오픈소스(BGE, MiniLM 등)를, 편의성과 확장성이 중요한 경우 상용 API(OpenAI, Cohere 등)를 선택하는 등 목적에 맞는 모델 선택이 필요합니다.
+* [Embedding Models in 2026: Provider Options, Pros, Cons, and Practical Architecture Choices](https://www.stackspend.app/resources/blog/embedding-models-2026-options-pros-cons)
+  * OpenAI, Cohere, Google Vertex AI, Amazon Bedrock 등 주요 제공자별 2026년 임베딩 모델의 장단점과 특징을 비교 분석합니다.
+  * Anthropic은 자체 임베딩 모델 대신 Voyage AI 등 타사 솔루션을 권장하며, xAI Grok은 컬렉션 기반 임베딩 방식을 제공합니다.
+  * Hugging Face를 통한 오픈소스 모델 호스팅 방식은 유연성과 비용 최적화 측면에서 강점이 있지만, 운영 및 평가의 복잡도가 높습니다.
+  * 프로덕션 환경의 기본 아키텍처로 관리형 벤더 모델(OpenAI 등)로 시작하여 점진적으로 오픈소스 및 전문 임베딩 모델(Voyage, Jina 등)을 벤치마킹하고, 생성과 임베딩 계층을 분리할 것을 권장합니다.
+* [How to Cut LLM Inference Costs with KV Caching](https://blog.purestorage.com/purely-technical/cut-llm-inference-costs-with-kv-caching/)
+  * LLM 추론 시 프롬프트 처리(Prefill) 단계의 막대한 연산 비용을 줄이기 위해, 계산된 KV 캐시를 GPU 로컬 메모리(HBM)에만 두지 않고 전역 스토리지 계층(ICMS 등)에 저장하여 재사용하는 아키텍처가 도입되고 있습니다.
+  * FlashBlade와 같은 고성능 스토리지를 통한 다이렉트 캐시 주입 기술은 컴퓨팅 헤비한 GPU 연산을 스토리지 I/O 대역폭으로 대체시켜, 첫 토큰 도달 시간(TTFT)을 획기적으로 단축하고 GPU 자원 낭비를 막습니다.
+  * 블록 해싱 기반으로 재사용 캐시를 매칭하며, 엔터프라이즈 보안 요구사항에 따라 의도치 않은 프라이빗 데이터 활용 및 해시 충돌을 막기 위해 철저한 테넌트 고립(Isolation) 설계가 병행되어야 합니다.
+  * 각각의 인퍼런스 서버간 텐서 병렬화(TP) 설정이 다를 경우 캐시의 호환성이 담보되지 않으므로, 룩업 시 이를 고려하여 트래픽을 영리하게 분배하는 GPU 토폴로지 인지 스케줄러의 도입이 필수적입니다.
+* [OpenClaw, 그리고 그 대안들에 대해 알아봅시다](https://turingpost.co.kr/p/openclaw)
+  * OpenClaw는 텔레그램, 디스코드 등의 메시징 채널과 연동하여 사용자의 환경과 선호도를 반영한 맞춤형 '개인 AI 비서'를 구축할 수 있게 해주는 오픈소스 프레임워크입니다.
+  * 에이전트의 정체성, 프롬프트 규칙, 메모리를 복잡한 코드가 아닌 일반 마크다운 파일(SOUL.md, MEMORY.md 등)로 정의하여 에이전트를 내구성 있고 버전 관리가 가능한 인프라로 취급합니다.
+  * 표면적으로는 챗봇 같지만, 중앙 Gateway 프로세스가 세션 라우팅, 툴 호출, 장기 메모리를 조율하며 언어 모델과 메시징 플랫폼 사이의 컨트롤 플레인(Control Plane) 역할을 수행합니다.
+  * OpenClaw의 철학에 영감을 받아, 초경량 구동(PicoClaw), 샌드박스 기반의 강력한 보안(IronClaw), 5달러짜리 하드웨어 구동(MimiClaw) 등 다양한 형태의 대안 프로젝트들이 파생되고 있습니다.
+
+
 # AI Daily Picks(20260318)
 
 * [Octen Series: Optimizing Embedding Models to #1 on RTEB Leaderboard - Octen Blog](https://octen-team.github.io/octen_blog/posts/octen-rteb-first-place/)
