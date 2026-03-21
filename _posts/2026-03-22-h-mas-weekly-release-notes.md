@@ -361,5 +361,4 @@ Model Registry는 데이터 통합(#105) → Backend API(#106) → CRUD UI(#107)
 ---
 
 **문서 작성일**: 2026년 3월 22일  
-**Phase 상태**: v0.4 Developer Preview 기능 구현 진행 중 (Model Registry 완료, 런타임 최적화 시스템 완료, 대시보드 실데이터 연동 예정)
 
