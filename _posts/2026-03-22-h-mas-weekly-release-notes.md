@@ -95,6 +95,7 @@ tags:
 - 모델 카드에 DropdownMenu(⋮) 추가 + 등록 성공 toast에 "배포하기" 액션 링크
 
 **의사결정 사항**:
+
 | 결정 | 내용 |
 |------|------|
 | DB 스키마 분리 | `models` + `serving_configs` 2테이블 — 모델 메타데이터와 서빙 설정의 관심사 분리 |
@@ -153,6 +154,7 @@ tags:
   - `GET /api/runtimes/semantic-keys` (크로스 런타임 매핑)
 
 **SemanticKey 매핑 테이블**:
+
 | SemanticKey | vLLM | TGI | Ollama | llama.cpp |
 |-------------|------|-----|--------|-----------|
 | `max_concurrent` | `max_num_seqs` | `max_concurrent_requests` | `num_parallel` | `parallel` |
@@ -182,6 +184,7 @@ tags:
 - **ParamSpec에 `gpuOnly`/`cpuOnly` 플래그** 추가 (vLLM, Ollama, llama.cpp)
 
 **의사결정 사항**:
+
 | 결정 | 내용 |
 |------|------|
 | 우선순위 체인 | Raw Override > Tier 2 (Native) > Tier 1 (Common) > Preset 기본값 — 숙련도별 Progressive Override |
