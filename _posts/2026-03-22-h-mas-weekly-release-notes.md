@@ -198,14 +198,17 @@ tags:
 **구현 완료**: 5개 시나리오 × 3개 모델 크기(소형/중형/대형) 조합의 내장 최적화 프리셋 15개 구축 + Backend API + 배포 폼 UI
 
 **주요 성과**:
-- **프리셋 15개 구축**:
-  | 시나리오 | 최적화 방향 |
-  |---------|-----------|
-  | 고 동시성 챗봇 | throughput 극대화, prefix_caching ON |
-  | 긴 문서 처리/요약 | max_context ↑, gpu_memory_util 보수적 |
-  | 코드 생성 | 낮은 latency, 중간 컨텍스트 |
-  | RAG 파이프라인 | prefix 캐싱 극대화, 높은 throughput |
-  | 단일 사용자 | latency 최소화 |
+
+**프리셋 15개 구축**:
+
+| 시나리오 | 최적화 방향 |
+|---------|-----------|
+| 고 동시성 챗봇 | throughput 극대화, prefix_caching ON |
+| 긴 문서 처리/요약 | max_context ↑, gpu_memory_util 보수적 |
+| 코드 생성 | 낮은 latency, 중간 컨텍스트 |
+| RAG 파이프라인 | prefix 캐싱 극대화, 높은 throughput |
+| 단일 사용자 | latency 최소화 |
+
 - **Backend**: `GET /api/optimization-presets`, `/{id}`, `/recommend` + `ResolveOptimization`에 Preset base layer (Tier 0) 통합
 - **Frontend**: OptimizationCard에 시나리오 카드 클릭 UI → 모델 크기 자동 매칭 → Tier 1 자동 채움 → 부분 오버라이드 지원
 - **우선순위 체인 완성**: Preset (Tier 0) → Common (Tier 1) → Native (Tier 2) → Raw Override
