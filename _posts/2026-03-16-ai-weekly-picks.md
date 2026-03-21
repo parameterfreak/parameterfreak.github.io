@@ -10,6 +10,30 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260320)
+
+* [Understanding LLMInferenceService - KServe](https://kserve.github.io/website/docs/model-serving/generative-inference/llmisvc/llmisvc-overview)
+  * KServe의 `LLMInferenceService`는 생성형 AI 워크로드(대규모 언어 모델 서빙) 관리를 위해 설계된 전용 Kubernetes CRD입니다.
+  * 기존 예측형 AI 중심의 `InferenceService`와 분리된 방식(Dual-Track 전략)을 통해, LLM에 더욱 특화된 라우팅 설정과 모델 스케줄링 기능을 제공합니다.
+  * 단일 노드부터 다중 노드 텐서/데이터 병렬화, Prefill-Decode 분리 등 고성능 분산 추론을 위한 다양한 배포 패턴을 지원합니다.
+  * Model, Workload, Router, Parallelism 사양(spec)을 조합하여, 엔터프라이즈 환경에서 유연하고 최적화된 서빙 아키텍처를 구성할 수 있습니다.
+
+* [TSEmbed: Unlocking Task Scaling in Universal Multimodal Embeddings](https://arxiv.org/abs/2603.04772)
+  * 범용 멀티모달 임베딩 모델의 성능 개발을 저해하는 "태스크 충돌(task conflict)" 문제를 해결하기 위한 프레임워크 **TSEmbed**를 제안합니다.
+  * MoE(Mixture-of-Experts)와 LoRA를 결합하여 서로 충돌하는 태스크 목표를 명시적으로 분리하고, 전문가 인지 네거티브 샘플링(EANS) 전략을 통해 학습 안정성을 확보합니다.
+  - MMEB(Massive Multimodal Embedding Benchmark)와 실제 산업 현장의 프로덕션 데이터셋에서 **SOTA(State-of-the-Art)** 성능을 달성하며 범용 멀티모달 임베딩의 확장 가능성을 입증했습니다.
+
+* [LLM2VEC-GEN: Generative Embeddings from Large Language Models](https://arxiv.org/abs/2603.10913)
+  * 입력을 직접 인코딩하는 기존 방식 대신, LLM이 생성할 잠재적 응답을 인코딩하는 새로운 자기지도 학습 패러다임 **LLM2VEC-GEN**을 제안합니다.
+  * 학습 가능한 특수 토큰을 활용해 LLM의 응답을 고정 길이 임베딩으로 압축하며, LLM 백본을 동결한 상태에서도 효율적인 학습이 가능합니다.
+  * MTEB 벤치마크에서 자기지도 학습 SOTA를 달성했으며, 유해 콘텐츠 검색 성능 감소 및 추론 능력 향상 등 실질적인 임베딩 품질 개선을 입증했습니다.
+
+* [Llama-Embed-Nemotron-8B: A Universal Text Embedding Model for Multilingual and Cross-Lingual Tasks](https://arxiv.org/abs/2511.07025)
+  * NVIDIA에서 개발한 오픈 웨이트 텍스트 임베딩 모델 **llama-embed-nemotron-8b**로, MMTEB 리더보드에서 1위를 달성한 고성능 범용 모델입니다.
+  * 1,610만 개의 대규모 학습 데이터와 합성 데이터 생성(SDG) 전략을 활용한 2단계 학습 시스템을 통해 뛰어난 다국어 처리 및 크로스링구얼 성능을 확보했습니다.
+  * Contrastive loss 실용 가이드와 SDG 전략 평가 등 상세한 ablation study 결과를 공개하여, 지시문(Instruction) 기반 임베딩 성능 향상을 위한 방법론을 제시했습니다.
+
+
 # AI Daily Picks(20260319)
 
 * [What are embedding models? A complete guide](https://www.openlayer.com/blog/post/what-are-embedding-models-complete-guide)
