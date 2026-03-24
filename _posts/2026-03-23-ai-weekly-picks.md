@@ -12,6 +12,13 @@ tags:
 
 # AI Daily Picks(20260323)
 
+* [LMCache: Slash LLM Inference Latency and Multiply Throughput with Enterprise-Grade KV Cache Reuse](https://www.papercodex.com/lmcache-slash-llm-inference-latency-and-multiply-throughput-with-enterprise-grade-kv-cache-reuse)
+  * 대규모 LLM 추론 시 발생하는 KV 캐시 메모리 병목 현상을 해결하기 위해 고안된 빠르고 유연한 오픈소스 KV 캐시 계층입니다.
+  * KV 캐시를 GPU 메모리에만 두지 않고 GPU, CPU, 로컬 디스크, 원격 스토리지 등 다중 계층 스토리지에 분산 저장하여 재사용성과 확장성을 극대화합니다.
+  * 프롬프트 내 단순 접두사 일치뿐만 아니라 반복되는 모든 텍스트 시퀀스를 재사용할 수 있으며, vLLM, SGLang과 원활하게 통합되어 첫 토큰 생성 시간(TTFT)을 단축하고 처리량을 크게 향상시킵니다.
+
+# AI Daily Picks(20260323)
+
 * [Normal Inference vs KV Cache vs LMCache](https://www.f22labs.com/blogs/normal-inference-vs-kvcache-vs-lmcache/)
   * Normal Inference: LLM의 기본 텍스트 생성 방식으로, 매 단계마다 이전 모든 토큰의 어텐션 상태를 다시 계산하여 시퀀스가 길어질수록 비용이 급증함.
   * KV Cache: 이전 토큰들의 Key-Value 텐서를 저장하여 재사용하는 최적화 기법으로, 새로운 토큰에 대해서만 연산을 수행하여 효율성을 높임.
