@@ -10,7 +10,7 @@ tags:
   - Reference
 ---
 
-# AI Daily Picks(20260323)
+# AI Daily Picks(20260324)
 
 * [LMCache: Slash LLM Inference Latency and Multiply Throughput with Enterprise-Grade KV Cache Reuse](https://www.papercodex.com/lmcache-slash-llm-inference-latency-and-multiply-throughput-with-enterprise-grade-kv-cache-reuse)
   * 대규모 LLM 추론 시 발생하는 KV 캐시 메모리 병목 현상을 해결하기 위해 고안된 빠르고 유연한 오픈소스 KV 캐시 계층입니다.
