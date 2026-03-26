@@ -10,6 +10,23 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260325)
+
+* [Distributed KV Cache Management and Systems Architecture for Long-Context LLM Inference](https://uplatz.com/blog/distributed-kv-cache-management-and-systems-architecture-for-long-context-llm-inference/)
+  * LLM의 컨텍스트 윈도우가 확장(128k ~ 1,000만+ 토큰)됨에 따라 추론 시스템의 병목 현상이 계산 능력(FLOPS)에서 메모리 용량 및 대역폭(KV Cache)으로 이동했음을 분석합니다.
+  * Ring Attention, TokenRing, LMCache, NVIDIA Dynamo와 같은 기술을 통해 KV Cache를 일시적인 버퍼가 아닌, 클러스터 전체에서 관리되는 분산형 자산으로 전환하는 아키텍처 변화를 설명합니다.
+  * CXL(Compute Express Link) 기반의 메모리 확장 하드웨어와 Jamba(Hybrid SSM-Transformer), Infini-attention(압축 메모리)과 같은 알고리즘 혁신이 대규모 컨텍스트 처리를 위한 핵심 요소임을 강조합니다.
+
+* [How NVIDIA Dynamo 1.0 Powers Multi-Node Inference at Production Scale - NVIDIA Technical Blog](https://developer.nvidia.com/blog/nvidia-dynamo-1-production-ready/)
+  * NVIDIA Dynamo 1.0은 대규모 멀티 노드 AI 배포를 위한 가용성 높은 분산 추론 프레임워크로, 주요 클라우드 플랫폼(AWS, Azure, GCP 등) 및 오픈소스 엔진(SGLang, vLLM 등)과 통합되어 최대 7배의 처리량 향상을 제공합니다.
+  * 에이전트 기반 추론 최적화(Priority-based routing, Cache pinning), 멀티모달 가속(분리된 E/P/D 단계, 임베딩 캐시), 그리고 비디오 생성 모델 지원을 통해 복잡한 생성형 AI 워크로드의 효율성을 극대화합니다.
+  * 쿠버네티스 네이티브 배포(DGDR), 계층적 결함 탐지 및 요청 마이그레이션 기능을 통한 고가용성 보장, 그리고 다양한 스토리지 계층(S3 등)을 지원하는 유연한 KV 블록 관리 시스템을 갖추고 있습니다.
+
+* [KV-Embedding: KV 재라우팅을 통한 냉동 LLM의 시퀀스 레벨 컨텍스트 활성화](https://arxiv.org/abs/2601.01046)
+  * 추가적인 학습 없이 냉동(Frozen) LLM의 KV 상태를 재라우팅하여 정보 비대칭 문제를 해결하고 시퀀스 레벨 컨텍스트 표현을 가능하게 하는 KV-Embedding 프레임워크를 제안합니다.
+  * 인과적 어텐션의 한계를 극복하기 위해 각 레이어의 마지막 토큰 KV를 입력 앞에 접두어로 배치하여 모든 토큰이 한 번의 순전파로 전체 문맥에 접근할 수 있도록 설계되었습니다.
+  * MTEB 벤치마크에서 기존 비학습 기반 방식 대비 최대 10%의 성능 향상을 보였으며, 내재적 차원 기반의 자동 레이어 선택과 하이브리드 풀링 전략의 효과를 입증했습니다.
+
 # AI Daily Picks(20260324)
 
 * [LMCache: Slash LLM Inference Latency and Multiply Throughput with Enterprise-Grade KV Cache Reuse](https://www.papercodex.com/lmcache-slash-llm-inference-latency-and-multiply-throughput-with-enterprise-grade-kv-cache-reuse)
