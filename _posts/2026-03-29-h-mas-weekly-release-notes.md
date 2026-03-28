@@ -106,6 +106,7 @@ tags:
 - `docs/research/SWR_MIGRATION_DESIGN.md` 설계 의사결정 기록
 
 **SWR 전환된 훅 (9개)**:
+
 | 훅 | 유형 | SWR 키 |
 |----|------|--------|
 | `useClusters` | 읽기 전용 | `/api/clusters` |
@@ -119,6 +120,7 @@ tags:
 | `useFailoverPolicies` | CRUD | `/api/failover-policies` |
 
 **SWR 전환된 컴포넌트 (5개)**:
+
 | 컴포넌트 | 변경 전 | 변경 후 |
 |----------|---------|---------| 
 | `instance-list.tsx` | `setInterval` 동적 폴링 | SWR `refreshInterval` 함수 |
@@ -128,6 +130,7 @@ tags:
 | `hf-token-settings.tsx` | `useCallback` + `useEffect` | SWR + mutation 후 `mutate(key)` |
 
 **의사결정 사항**:
+
 | 결정 | 내용 |
 |------|------|
 | SWR vs TanStack Query | 현재 규모(훅 9개, API ~12개)에서 번들 크기·Next.js 호환성·API 단순성 기준으로 SWR 선택 |
@@ -154,6 +157,7 @@ tags:
 - "삭제 중" 클러스터 상세 다이얼로그에 안내 메시지와 "강제 해제" 버튼 제공
 
 **해결된 기술 문제**:
+
 | 문제 | 원인 | 해결 |
 |------|------|------|
 | 클러스터 해제 후 목록에서 사라지지 않음 | xxxxxxx finalizer(`xxxxxxx.io/cluster-controller`)가 원격 클러스터 미접근으로 해제 불가 → Terminating 고착 | Delete 전 finalizer patch 강제 제거 + `DeletionTimestamp` 기반 `"deleting"` 상태 매핑 |
