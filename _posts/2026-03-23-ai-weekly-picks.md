@@ -10,6 +10,19 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260326)
+
+* [KV-Cache Wins You Can See: From Prefix Caching in vLLM to Distributed Scheduling with llm-d](https://llm-d.ai/blog/kvcache-wins-you-can-see)
+  * 대화형 AI 및 에이전트 워크플로우 같은 프롬프트(접두사) 비중이 높은 환경에서 vLLM의 캐싱은 핵심적이나, 이를 분산 환경 확장 시 스케줄러가 캐시 위치를 파악하지 못해 비용과 응답 지연 문제가 발생합니다.
+  * llm-d는 vLLM 각 포드의 실시간 KVEvents 스트림을 통해 클러스터 전체의 KV-Block 캐시 인덱스를 글로벌 뷰로 관리합니다.
+  * 이를 바탕으로 스케줄러 내 지정 기능(Precise Prefix-Cache Scorer)이 개별 포드의 프리픽스 캐시 보유 비율을 계산해 가장 최적화된 포드로 요청을 라우팅합니다.
+  * 벤치마크 결과, 근사적 로드 밸런싱 대비 사용자 응답 속도(TTFT)가 57배 빠르며 전체 시스템 처리량을 25% 향상시켰습니다.
+
+* [Understanding KV Cache in LLM Inference](https://jingchaozhang.github.io/understanding-kv-cache/)
+  * LLM 추론 시 GPU 메모리를 가장 많이 차지하는 것은 모델 가중치가 아니라 KV 캐시입니다. KV 캐시는 시퀀스 길이에 완벽하게 선형적으로 비례하며, 컨텍스트가 길어지거나 동시 요청(Batch Size)이 증가할수록 메모리 사용량이 급증합니다.
+  * Grouped Query Attention(GQA)는 필수적인 최적화 기법으로, 여러 쿼리 헤드가 K/V 헤드를 공유하여 KV 캐시 크기를 획기적으로 줄여줍니다 (예: Qwen2.5-7B는 86% 감소).
+  * Prefill 단계는 연산 중심(Compute-bound)인 반면, Decode 단계는 메모리 대역폭 중심(Memory-bandwidth-bound)으로 두 단계의 병목 원인이 완전히 다름을 실험으로 증명했습니다.
+
 # AI Daily Picks(20260325)
 
 * [Distributed KV Cache Management and Systems Architecture for Long-Context LLM Inference](https://uplatz.com/blog/distributed-kv-cache-management-and-systems-architecture-for-long-context-llm-inference/)
