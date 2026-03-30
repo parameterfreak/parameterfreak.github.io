@@ -10,7 +10,7 @@ tags:
   - Reference
 ---
 
-# AI Daily Picks(20260330)
+# AI Daily Picks(20260331)
 
 - [KV Cache Optimization: Memory Efficiency for Production LLMs](https://introl.com/blog/kv-cache-optimization-memory-efficiency-production-llms-guide)
   * LLM 추론 시스템에서 전통적인 방식의 KV 캐시 메모리 낭비를 해결하기 위해 도입된 vLLM의 PagedAttention은 메모리 단편화를 제거하여 처리량을 2-4배 향상시킵니다.
