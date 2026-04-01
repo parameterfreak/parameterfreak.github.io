@@ -10,6 +10,29 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260402)
+
+* [Agentic AI Trends 2026: Future of Autonomous AI Agents - Acropolium](https://acropolium.com/blog/agentic-ai-trends/)
+  * **2026년 Agentic AI의 핵심 트렌드는 기능 향상이 아닌 프로덕션 성숙도**: 도구 프로토콜(MCP, A2A)의 표준화, 오케스트레이션 프레임워크(LangGraph, AutoGen)의 발전, 규제 산업을 위한 거버넌스 도구의 도입으로 기존의 PoC 수준을 넘어 실제 프로덕션 배포가 활성화되고 있습니다.
+  * **AI 에이전트 프로젝트 실패를 부르는 4가지 주요 원인**: 정제되지 않고 단절된 데이터(Data Readiness 부족), 외부 시스템에서 안정적인 액션을 막는 통합(Integration) 레이어 부재, 단일 에이전트에게 너무 많은 역할을 부여하여 발생하는 과부하, 그리고 배포 직전에야 고려되어 프로젝트를 무산시키는 거버넌스 부재가 가장 잦은 실패 요인입니다.
+  * **성공적인 배포를 위한 다중 에이전트(Multi-Agent) 아키텍처 필수화**: 향후에는 단일 모델이 아닌, 조정자(Coordinator) 에이전트가 특정 분야(데이터 검색, 결과 추론, 시스템 기록 등)에 특화된 전문가 에이전트들에게 작업을 위임하는 구조가 지배적이 될 것이며, 이를 뒷받침할 5계층(데이터, 모델, 도구 연동, 오케스트레이션, 거버넌스) 아키텍처 구성이 성공의 핵심입니다.
+
+* [15 AI Agents Trends to Watch in 2026 - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2026/01/ai-agents-trends/)
+  * **단순 작업(Task)에서 풀 워크플로우 오케스트레이션으로의 진화**: 2026년 AI 에이전트는 단순히 인간의 작업을 보조하는 역할을 넘어 작업을 주도적으로 기획, 조율, 완성하는 책임을 갖게 되며, 다수 에이전트가 협력하는 아키텍처(Multi-Agent Systems)가 기본 도입 모델로 자리 잡을 것입니다.
+  * **실시간 컨텍스트 결합(Grounding)과 상호운용성 필수화**: 폐쇄적 운영에서 벗어나 CRMs, ERP 등 엔터프라이즈 데이터에 대한 강한 연결 파이프라인 없이는 환각 현상 오차를 통제할 수 없으며, 서로 다른 플랫폼 간의 상호작용 능력이 실사용의 최대 관건이 될 것입니다. 
+  * **물리적 세계 및 커머스로의 활동 영역 팽창**: 디지털 상거래나 결제를 대행하는 거래 에이전트 역할 및 물리적 로봇, 드론 군집에 통제 두뇌로 자리하여 물리 세계에 직접 영향을 미치는 자율적 에이전트 시대가 열릴 것이며, 이에 맞춘 책임, 거버넌스, 평가 지표(ROI 측정)가 어느 때보다 중요해집니다.
+
+* [Embedding APIs for RAG- Model Comparison & Implementation Guide (2026)](https://ofox.ai/blog/embedding-api-rag-complete-guide-2026/)
+  * **2026년 기준 주요 임베딩 API 모델의 특징 비교 제공**: OpenAI의 text-embedding-3-large, 다국어 처리 중심의 Cohere embed-v4, 긴 컨텍스트에 유리한 Voyage 3.5 및 오픈소스 BGE-M3 등 각 모델의 차원(Dimensions)과 목적에 따른 활용성을 비교합니다.
+  * **품질과 비용 최적화를 위한 효율적인 청킹(Chunking)과 파이프라인 구성 전략 안내**: 고정 크기, 재귀적 분할 또는 시맨틱 기반 텍스트 분할 방식별 장단점을 비교하고, Batch 처리를 통한 효율성과 캐싱 도입으로 운영 비용을 최적화하는 구체적인 파이프라인 구현 절차를 다룹니다.
+  * **하이브리드 검색 및 교차 인코더(Cross-encoder) 리랭킹을 통한 검색 정확도 향상**: 의미 기반 탐색의 약점을 보완하는 키워드 혼합 하이브리드 검색과 최상위 검색 풀에 상세 채점 모델(Rerank)을 결합하여, 실시간 환경에서 RAG의 검색 정밀도(Precision)와 재현율(Recall)을 동시에 잡는 2단계 구조를 권장합니다.
+
+* [2026년 RAG에 가장 적합한 임베딩 모델을 선택하는 방법: 벤치마킹한 10가지 모델](https://milvus.io/ko/blog/choose-embedding-model-rag-2026.md)
+  * 기존 영어 중심의 MTEB 벤치마크 한계를 극복하기 위해 다국어, 교차 모달, 긴 문맥 정보 검색, 저장 효율성을 평가하는 CCKM 프레임워크를 제안함.
+  * 전천후 최고의 모델로는 다국어 검색 및 정보 추출 성능이 가장 우수한 'Gemini Embedding 2'를 추천함.
+  * 텍스트-이미지 간 교차 모달 검색은 오픈소스 모델인 'Qwen3-VL-2B'가 상용 API보다 우수하며, 저장 효율성이 중요할 경우 MRL 방식에 최적화된 'Voyage Multimodal 3.5' 또는 'Jina Embedding v4'를 권장함.
+
+
 # AI Daily Picks(20260331)
 
 - [KV Cache Optimization: Memory Efficiency for Production LLMs](https://introl.com/blog/kv-cache-optimization-memory-efficiency-production-llms-guide)
