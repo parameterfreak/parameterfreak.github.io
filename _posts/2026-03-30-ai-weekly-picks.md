@@ -10,6 +10,24 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260403)
+
+* [NVIDIA Researchers Introduce KVTC Transform Coding Pipeline to Compress Key-Value Caches by 20x for Efficient LLM Serving](https://www.marktechpost.com/2026/02/10/nvidia-researchers-introduce-kvtc-transform-coding-pipeline-to-compress-key-value-caches-by-20x-for-efficient-llm-serving/)
+  * NVIDIA 연구진은 LLM 인퍼런스 시 발생하는 KV 캐시 메모리 병목 현상을 해결하기 위해 20배(최대 40배)까지 압축 가능한 경량 트랜스폼 코더 KVTC(KV Cache Transform Coding)를 도입함.
+  * PCA 기반 특징 비상관화(Feature Decorrelation), 적응형 양자화(Adaptive Quantization), 엔트로피 코딩(Entropy Coding)을 활용하여 핵심 토큰(Attention Sinks, 최근 128개 토큰)은 보존하면서도 모델 가중치 변경 없이 오버헤드(파라미터 약 2.4% 증가)를 최소화함.
+  * 기존 바닐라 모델 대비 모델 추론 정확도를 거의 유지하면서 긴 문맥(long-context)의 첫 단어 생성 시간(TTFT)을 최대 8배 단축하여 메모리 효율성이 높은 거대 모델 서빙 환경 구축을 가능하게 함.
+
+* [Embedding Models and Semantic Search 2026 - Zylos Research](https://zylos.ai/research/2026-01-14-embedding-models-semantic-search)
+  * 상용 API(OpenAI, Cohere)와 오픈소스(BGE-M3, E5 등) 임베딩 간의 성능 격차가 줄었으며, 차원 유연성을 제공하는 Matryoshka 표현학습(MRL) 및 양자화 기술이 결합되어 실용적인 저장 및 지연 시간 저감이 가능해짐.
+  * 시맨틱 검색 파이프라인의 구조가 다변화되어, 밀집 벡터(Dense)와 희소 벡터(Sparse)를 결합한 하이브리드 검색 후 교차 인코더(Cross-Encoder) 모델로 재정렬(Reranking)하는 3단계 검색 방식이 정석으로 자리 잡음.
+  * 향후 텍스트뿐만 아니라 이미지 및 오디오를 아우르는 멀티모달 임베딩의 대중화가 이루어지며, 단순 검색을 넘어 LLM과 연계된 에이전트 및 RAG 기능 향상을 주도하고 있음.
+
+* [Which Embedding Model Should You Use in 2026? (Full MTEB Benchmark Guide) - KnowledgeSDK Blog](https://knowledgesdk.com/blog/embedding-model-comparison-2026)
+  * MTEB 벤치마크에서는 Retrieval 항목의 점수를 중점적으로 보아야 하며, 2026년에는 Gemini Embedding 2(Multimodal 강점), Qwen3-Embedding-8B(오픈소스 강자), BGE-M3(다국어 및 로컬 배포) 등이 주요 모델로 꼽힌다.
+  * API 기반의 text-embedding-3-small(대부분의 RAG 케이스 및 비용/지연시간 우수) 모델은 간단한 설정에 유리하며, 전문 용어가 많은 문서는 text-embedding-3-large 또는 Qwen3-8B를 사용하는 것이 좋다.
+  * 프로덕션 도입 전 100~200개의 대표 쿼리에 대해 Recall 평가를 수행하여 워크로드에 맞는 최적의 모델을 선정하는 것이 중요하다.
+
+
 # AI Daily Picks(20260402)
 
 * [Agentic AI Trends 2026: Future of Autonomous AI Agents - Acropolium](https://acropolium.com/blog/agentic-ai-trends/)
