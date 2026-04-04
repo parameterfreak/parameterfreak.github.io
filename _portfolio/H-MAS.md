@@ -1,6 +1,6 @@
 ---
 title: "H-MAS — Hardware-aware Multi-Cluster AI Serving Platform"
-excerpt: "고비용의 AI 추론 비용을 절감하는 하드웨어 인지형 멀티 클러스터 서빙 플랫폼br/><img src='/images/portfolio/hmas/01-dashboard.png'>"
+excerpt: "고비용의 AI 추론 비용을 절감하는 하드웨어 인지형 멀티 클러스터 서빙 플랫폼<br/><img src='/images/portfolio/hmas/01-dashboard.png'>"
 collection: portfolio
 ---
 
