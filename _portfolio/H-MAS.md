@@ -128,11 +128,11 @@ H-MAS에서 AI 모델을 배포하는 과정입니다.
 ```mermaid
 flowchart TD
     S1["<b>Step 1. 모델 선택</b><br/>모델 저장소에서 배포할 모델 선택<br/>모델 크기, 카테고리, 최소 GPU 요구사항 자동 표시"]
-    S2["**Step 2. 배치 정책 선택**<br/>70B+ → HP 클러스터 자동 배치 (추천)<br/>＜ 70B → GP 클러스터 자동 배치<br/>수동 선택도 가능 (특정 클러스터 지정)"]
-    S3["**Step 3. 서빙 런타임 선택**<br/>모델이 지원하는 런타임만 표시<br/>vLLM · Ollama · TGI · Triton 등"]
-    S4["**Step 4. 리소스 및 런타임 설정**<br/>GPU 타입/수량, 메모리, CPU<br/>Tensor Parallel Size, Max Model Length<br/>고급: QoS, GPU 공유, 장애 복구 정책"]
-    S5["**Step 5. 배포 실행**<br/>컨트롤 플레인이 최적 클러스터 선택<br/>클러스터별 리소스 자동 오버라이드<br/>GPU 토폴로지 기반 최적 배치"]
-    R["**배포 결과**<br/>클러스터: gpu-hp-cluster-1<br/>리소스: GPU 4개, 128Gi<br/>NVLink 연결 GPU 우선 할당"]
+    S2["<b>Step 2. 배치 정책 선택</b><br/>70B+ → HP 클러스터 자동 배치 (추천)<br/>＜ 70B → GP 클러스터 자동 배치<br/>수동 선택도 가능 (특정 클러스터 지정)"]
+    S3["<b>Step 3. 서빙 런타임 선택</b><br/>모델이 지원하는 런타임만 표시<br/>vLLM · Ollama · TGI · Triton 등"]
+    S4["<b>Step 4. 리소스 및 런타임 설정</b><br/>GPU 타입/수량, 메모리, CPU<br/>Tensor Parallel Size, Max Model Length<br/>고급: QoS, GPU 공유, 장애 복구 정책"]
+    S5["<b>Step 5. 배포 실행</b><br/>컨트롤 플레인이 최적 클러스터 선택<br/>클러스터별 리소스 자동 오버라이드<br/>GPU 토폴로지 기반 최적 배치"]
+    R["<b>배포 결과</b><br/>클러스터: gpu-hp-cluster-1<br/>리소스: GPU 4개, 128Gi<br/>NVLink 연결 GPU 우선 할당"]
 
     S1 --> S2 --> S3 --> S4 --> S5 --> R
 ```
