@@ -178,7 +178,7 @@ tags:
 
 ### 6. GHCR 이미지 태그 소문자 변환으로 빌드 실패 해결 (#168 → PR #169)
 
-**수정 완료**: `github.repository_owner`가 대문자 포함 조직명(`ShrinkLabs`)을 반환하여 Docker 이미지 태그가 `invalid tag` 오류를 발생시키던 문제 수정
+**수정 완료**: `github.repository_owner`가 대문자 포함 조직명(`xxxxxxxxxx`)을 반환하여 Docker 이미지 태그가 `invalid tag` 오류를 발생시키던 문제 수정
 
 **수정 내용**:
 - `env` 레벨 이미지 변수를 제거하고, step에서 `tr '[:upper:]' '[:lower:]'`로 소문자 변환 후 `GITHUB_ENV`에 설정
