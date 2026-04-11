@@ -39,6 +39,4 @@ redirect_from:
 
 ### Contact
 
-- [github.com/parameterfreak](https://github.com/parameterfreak)
-- [x.com/parameterfreak](https://x.com/parameterfreak)
-- [parameterfreak@gmail.com](mailto:parameterfreak@gmail.com)
+- [contact@parameterfreak.com](mailto:contact@parameterfreak.com)
