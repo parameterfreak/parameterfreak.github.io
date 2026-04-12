@@ -16,10 +16,19 @@
   }
 </style>
 <div class="video-container">
+  {% if include.autoplay %}
+  <iframe 
+    src="https://www.youtube.com/embed/{{ include.id }}?autoplay=1&mute=1" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  {% else %}
   <iframe 
     src="https://www.youtube.com/embed/{{ include.id }}" 
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
   </iframe>
+  {% endif %}
 </div>
