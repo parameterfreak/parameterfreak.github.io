@@ -19,7 +19,7 @@ tags:
 
 이번 주는 **실제 GPU 배포 파이프라인 안정화**, **HuggingFace 생태계 통합 (비-gated 모델 프리셋 + 토큰 관리)**, **배포 상세 페이지 강화**, **정책-배포 구조 재설계 착수**에 중점을 둔 기간이었습니다. 총 **9개의 커밋**, **9개의 PR 머지**, **12개의 이슈 생성**이 완료되었으며, Kubernetes + RTX 5060 Ti 환경에서 실제 GPU 추론 배포를 최초로 성공하면서 발견된 크리티컬 버그 3건(runtimeClassName 누락, 삭제 시 리소스 잔류, 이름 충돌)을 즉시 해결하고, 멀티 클러스터 전파 체인의 올바른 삭제 순서를 확립했습니다.
 
-{% include youtube.html id="-Wj9mCw_kbk" %}
+{% include youtube.html id="-Wj9mCw_kbk" autoplay=true %}
 
 ---
 

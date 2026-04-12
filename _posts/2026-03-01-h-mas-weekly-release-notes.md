@@ -19,7 +19,7 @@ tags:
 
 이번 주는 **정책↔배포 연동 시스템 구축**, **서빙 런타임 GPU/CPU 모드 선택 지원**, **클러스터 운영 가시성 강화**, **CPU 전용 Zone의 1등 시민 격상**에 중점을 둔 기간이었습니다. 총 **9개의 커밋**, **6개의 PR 머지**, **5개의 이슈 생성**이 완료되었으며, 이전 Iteration에서 계획한 4개 항목을 **모두 달성**하고 정책 시스템과 배포 파이프라인이 하나의 워크플로로 통합되었습니다.
 
-{% include youtube.html id="CKIPhkRtR1w" %}
+{% include youtube.html id="CKIPhkRtR1w" autoplay=true %}
 
 ---
 

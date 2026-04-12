@@ -19,7 +19,7 @@ tags:
 
 이번 주는 **정책-배포 구조 재설계 Phase 2~4 완료**, **Zone 개념 전면 제거 및 클러스터 타입 기반 용어 통일**, **리소스 프로파일 클러스터 타입 동적 구성**에 중점을 둔 기간이었습니다. 총 **6개의 커밋**, **5개의 PR 머지**, **2개의 이슈 생성**이 완료되었으며, Iteration 12에서 착수한 정책-배포 구조 재설계를 Phase 2(xxx/xxxxxxxxxxx 제거)~Phase 4(문서 업데이트)까지 마무리하고, H-MAS 고유의 "Zone A/B/C" 추상 계층을 완전히 걷어내어 "클러스터 타입(HP/GP/CPU Only)"으로 전면 통일한 대규모 리팩토링 주간이었습니다.
 
-{% include youtube.html id="OameWF5U9tA" %}
+{% include youtube.html id="OameWF5U9tA" autoplay=true %}
 
 ---
 

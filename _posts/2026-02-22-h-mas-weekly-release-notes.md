@@ -19,7 +19,7 @@ tags:
 
 이번 주는 **Zone 기반 Dual-Track 배포 정책 레이어 구현**, **CPU 전용 클러스터 서빙 지원**, **런타임 고급 설정 및 PVC 기반 모델 캐싱**, **클러스터 레이블 관리 체계 확립**에 중점을 둔 기간이었습니다. 총 **9개의 커밋**, **7개의 PR 머지**, **12개의 이슈 생성**이 완료되었으며, 배포 파이프라인 위에 **Zone 기반 정책 레이어**가 구축되고, **CPU 전용 클러스터까지 포괄하는 3-Zone 분류 체계**로 확장되었습니다.
 
-{% include youtube.html id="-Q4kQahBkLU" %}
+{% include youtube.html id="-Q4kQahBkLU" autoplay=true %}
 
 ---
 

@@ -20,7 +20,7 @@ tags:
 
 이번 주는 **운영 안정성 버그 3건 수정**, **Model Registry 풀스택 구현(데이터 통합→Backend API→CRUD UI→런타임 호환성)**, **런타임 최적화 파라미터 시스템 전체 구축(ParamSpec 스키마→적용 엔진→시나리오 프리셋)**에 중점을 둔 기간이었습니다. 총 **19개의 커밋**, **12개의 PR 머지**, **27개의 이슈 생성**이 완료되었으며, Iteration 13에서 완료한 정책-배포 구조 재설계에 이어 사용자 경험의 핵심 축인 "모델 관리"와 "서빙 최적화"를 본격적으로 구현하여 v0.4 Developer Preview의 기능 완성도를 크게 끌어올린 주간이었습니다.
 
-{% include youtube.html id="oCWUrJ3vTvU" %}
+{% include youtube.html id="oCWUrJ3vTvU" autoplay=true %}
 
 
 ---

@@ -19,7 +19,7 @@ tags:
 
 이번 주는 **대시보드 실데이터 연동 완료(mock→API 전환)**, **프론트엔드 데이터 페칭 SWR 마이그레이션**, **클러스터 Terminating 고착 버그 수정**에 중점을 둔 기간이었습니다. 총 **10개의 커밋**, **7개의 PR 머지**, **3개의 이슈 생성**이 완료되었으며, Iteration 14에서 계획한 대시보드 실데이터 연동 4건을 모두 달성하고, SWR 도입으로 프론트엔드 데이터 페칭 아키텍처를 근본적으로 개선한 주간이었습니다.
 
-{% include youtube.html id="B5GGjatZfWc" %}
+{% include youtube.html id="B5GGjatZfWc" autoplay=true %}
 
 ---
 

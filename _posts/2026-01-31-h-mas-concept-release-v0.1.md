@@ -32,7 +32,7 @@ tags:
 
 실제 백엔드 엔진의 세부 구현에 앞서, 인프라 운영자가 이 복잡한 자원들을 어떻게 하면 가장 직관적으로 제어할 수 있을지 사용자 경험(UX)을 먼저 정리해 보고 있습니다.
 
-{% include youtube.html id="68sAcECd9ww" %}
+{% include youtube.html id="68sAcECd9ww" autoplay=true %}
 
 * **인프라 현황**: 흩어진 멀티 클러스터 자원들의 사용률과 상태를 한눈에 파악
 * **하드웨어 맵**: GPU 간의 연결 상태를 시각적으로 보며 관리
