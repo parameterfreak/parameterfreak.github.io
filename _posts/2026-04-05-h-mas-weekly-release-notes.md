@@ -19,7 +19,7 @@ tags:
 
 이번 주는 **v0.4.0 Developer Preview 릴리즈 완료**, **JWT 기반 인증 시스템 전체 구현**, **Helm Chart + GHCR CI/CD 기반 설치 자동화**에 중점을 둔 기간이었습니다. 총 **27개의 커밋**, **14개의 PR 머지**, **15개의 이슈 생성**이 완료되었으며, v0.4 릴리즈의 P0 Blocker 4개를 모두 해결하고 성공 기준 5/5를 달성하여 첫 외부 릴리즈를 출시한 주간이었습니다.
 
-{% include youtube.html id="uyeynYfqWMs" %}
+{% include youtube.html id="uyeynYfqWMs" autoplay=true %}
 
 ---
 
