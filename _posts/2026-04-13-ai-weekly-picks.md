@@ -10,6 +10,18 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260415)
+
+* [KV-Cache Wins You Can See: From Prefix Caching in vLLM to Distributed Scheduling with llm-d](https://llm-d.ai/blog/kvcache-wins-you-can-see)
+  * LLM inference 환경에서 KV-Cache hit rate은 성능(지연 시간)과 비용(최대 10배 차이)에 직결되는 핵심 지표이며 대화형 AI나 에이전트 워크플로우같이 접두사(Prefix)가 긴 패턴에서 그 중요성이 더욱 부각됨.
+  * 단일 인스턴스의 vLLM 캐싱 효과는 분산 환경 로드밸런싱 과정에서 무력화되기 쉬우나, llm-d는 vLLM 포드들의 KVEvents를 통해 실시간 글로벌 캐시 뷰를 구축하여 문제를 해결함.
+  * 구축된 뷰를 바탕으로 한 Precise Prefix-Cache Aware 스케줄링으로 캐시 재사용을 극대화하여, 기존의 근사치 기반/부하 기반 스케줄러 대비 응답 속도(TTFT)를 최대 57배 높이고 시스템 처리량을 2배 이상 향상시킴.
+* [Accelerate Large-Scale LLM Inference and KV Cache Offload with CPU-GPU Memory Sharing](https://developer.nvidia.com/blog/accelerate-large-scale-llm-inference-and-kv-cache-offload-with-cpu-gpu-memory-sharing)
+  * NVIDIA Grace Blackwell 및 Grace Hopper 아키텍처는 NVLink-C2C를 통해 CPU와 GPU 간 통합 메모리 주소 공간을 제공하여 명시적인 데이터 전송 없이 메모리를 공유함.
+  * Llama 3 70B와 같은 대규모 LLM은 추론 시 GPU 메모리(예: GH200의 96GB) 한계를 넘어 OOM(Out-of-Memory) 에러를 발생시키기 쉬움.
+  * RAPIDS Memory Manager (RMM) 라이브러리를 활용해 관리 메모리(managed memory)를 할당하면 CPU 메모리(최대 480GB)와 GPU 메모리를 함께 사용하여 물리적 GPU 메모리 한계를 극복하고 대규모 모델 추론이 가능함.
+
+
 # AI Daily Picks(20260414)
 
 * [Improving Text Embeddings with Large Language Models](https://arxiv.org/html/2401.00368v1)
