@@ -28,6 +28,10 @@ tags:
   * 에이전틱 AI(Agentic AI)는 단순한 실험 단계를 넘어 프로덕션 도입의 최우선 순위로 자리잡았으며, 조사 대상 기업의 100%가 2026년에 활용 수준을 확대할 계획이고 74%는 이를 전략적 필수 과제로 인식하고 있습니다.
   * 기업 리더들은 플랫폼 평가 시 즉각적인 ROI보다는 보안과 거버넌스(34%), 기존 시스템과의 통합(30%), 안정성 및 평가 지표(24%) 등 신뢰성 및 운영 준비도를 최우선으로 고려합니다.
   * 데이터 부족과 전문 인력 한계 같은 확장성의 장벽이 존재하지만 절반 이상의 조직(57%)이 시스템 종속성이 없는 오픈 소스 기반 도구 확장을 선호하며, 시간 절약 및 운영 비용 절감 등 실질적인 혜택을 전사적으로 경험하고 있습니다.
+* [Linux lays down the law on AI-generated code, says yes to Copilot, no to AI slop, and humans take the fall for mistakes - after months of fierce debate, Torvalds and maintainers come to an agreement | Tom's Hardware](https://www.tomshardware.com/software/linux/linux-lays-down-the-law-on-ai-generated-code-yes-to-copilot-no-to-ai-slop-and-humans-take-the-fall-for-mistakes-after-months-of-fierce-debate-torvalds-and-maintainers-come-to-an-agreement)
+  * 리눅스 커널 커뮤니티가 AI 생성 코드에 대한 공식 정책을 수립하여 AI 도구 활용을 공식적으로 허용하되 엄격한 투명성과 책임 규정을 적용하기로 합의했습니다.
+  * 제출자는 의무적으로 "Assisted-by" 태그를 사용하여 AI의 코드 지원 내역을 명시해야 하며, 코드의 최종 품질이나 잠재적인 버그 문제에 대한 모든 책임은 코드를 제출한 인간 개발자에게 있습니다.
+  * AI 코드를 전면 금지하는 다른 오픈소스 프로젝트와 달리, "AI는 일종의 도구일 뿐"이라는 기조 하에 도구 통제보다는 제출자의 책임 소재 확립에 집중하는 실용적인 정책을 도입했습니다.
 
 
 # AI Daily Picks(20260413)
