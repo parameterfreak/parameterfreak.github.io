@@ -3,7 +3,7 @@ title: 'korean-law-embedding-research-notes-2025-12-07-12-13'
 date: 2025-12-13
 permalink: /posts/2025/12/weekly-research-notes-2025-12-07-12-13/
 categories:
-  - Korean-Law-Embedding
+  - LexEM
 tags:
   - embedding
   - fine-tuning
