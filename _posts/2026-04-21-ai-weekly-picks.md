@@ -10,6 +10,13 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260422)
+
+* [From Models to Scientists: Building AI Agents for Scientific Discovery - Kempner Institute](https://kempnerinstitute.harvard.edu/research/deeper-learning/from-models-to-scientists-building-ai-agents-for-scientific-discovery)
+  * 하버드 Kempner Institute에서 개발한 **ToolUniverse**는 대규모 언어 모델(LLM)이 600개 이상의 과학 도구(머신러닝 모델, DB, 시뮬레이터 등)를 활용해 연구를 기획하고 수행할 수 있게 해주는 AI 과학자 에이전트 구축 프레임워크입니다.
+  * 4가지 핵심 컴포넌트(Manager, Composer, Discover, Optimizer)를 제공하여, 단순한 도구 호출(MCP)을 넘어 다단계 과학적 추론과 워크플로우를 실행하고 새로운 도구를 자율적으로 생성 및 최적화할 수 있도록 지원합니다.
+  * 실제 사례로 AI 에이전트가 단백질 타겟 탐색부터 화합물 식별, 구조 최적화 및 특허 검증에 이르는 약물 발견의 전 과정을 시뮬레이션하여 인간 연구자의 강력한 협력자(Co-scientist)로 활용될 수 있음을 보여주었습니다.
+
 # AI Daily Picks(20260421)
 
 * [Microsoft's Harrier Embeds 32K Tokens at Once - AI Beat](https://ai-beat.github.io/news/2026/03/harrier-oss-multilingual-embeddings/)
