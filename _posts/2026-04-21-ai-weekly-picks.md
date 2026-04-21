@@ -24,7 +24,7 @@ tags:
   * 별도의 재학습 없이(training-free) LLM의 KV 캐시 메모리 사용량을 최대 6배 줄여주는 구글의 압축 기술 'TurboQuant'를 분석한 글로, 장문 컨텍스트 추론의 핵심 병목인 VRAM 한계를 획기적으로 극복할 수 있습니다.
   * 극심한 비대칭성 문제를 지닌 캐시 값 분포를 'PolarQuant' 단계의 직교 회전(Orthogonal rotation)으로 균일화하여 양자화 효율을 극대화하며, 실제 구현 시에는 논문상의 QJL 잔차 교정 대신 보편적인 MSE 전용 양자화(MSE-only quantization)를 사용하는 것이 성능 면에서 우수한 것으로 입증되었습니다.
   * 기존 파라미터 양자화(AWQ 등)와 동시 적용이 가능한 상호보완적 기술로서, 향후 프레임워크 지원이 완료되면 다중 접속 및 장문 입력이 필요한 에이전트/RAG 기반 기업용 AI 환경의 인프라 효율성을 극대화할 것입니다.
-* [LLM Inference and KV Cache Complete Guide [2026]: How Token Generation Works | QubitTool](https://qubittool.com/blog/llm-inference-kv-cache-guide)
+* [LLM Inference and KV Cache Complete Guide [2026]: How Token Generation Works - QubitTool](https://qubittool.com/blog/llm-inference-kv-cache-guide)
   * LLM 텍스트 생성 시 이전 토큰에 대한 중복 연산을 방지해주는 'KV Cache(Key-Value Cache)' 메커니즘의 원리를 설명한 상세 가이드입니다.
   * 계산 속도를 O(1) 수준으로 높이는 대신 GPU의 VRAM 메모리 소모가 컨텍스트 길이에 비례해 선형적으로 증가하며, 결국 메모리 관리(Memory bottleneck)가 실제 운영 및 배포 단계에서 가장 중요한 과제가 됨을 강조합니다.
   * 메모리 한계 부딪힘을 극복하기 위한 대표적 최적화 기술로 PagedAttention(메모리 파편화 방지), GQA(멀티 쿼리 헤드의 KV 헤드 공유), KV Cache Quantization(데이터 정밀도 축소) 등을 소개하고 활용을 권장합니다.
