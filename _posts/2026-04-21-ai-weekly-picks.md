@@ -28,3 +28,8 @@ tags:
   * LLM 텍스트 생성 시 이전 토큰에 대한 중복 연산을 방지해주는 'KV Cache(Key-Value Cache)' 메커니즘의 원리를 설명한 상세 가이드입니다.
   * 계산 속도를 O(1) 수준으로 높이는 대신 GPU의 VRAM 메모리 소모가 컨텍스트 길이에 비례해 선형적으로 증가하며, 결국 메모리 관리(Memory bottleneck)가 실제 운영 및 배포 단계에서 가장 중요한 과제가 됨을 강조합니다.
   * 메모리 한계 부딪힘을 극복하기 위한 대표적 최적화 기술로 PagedAttention(메모리 파편화 방지), GQA(멀티 쿼리 헤드의 KV 헤드 공유), KV Cache Quantization(데이터 정밀도 축소) 등을 소개하고 활용을 권장합니다.
+* [Microsoft Harrier Disrupts the AI Landscape Dethroning Proprietary Embedding Models — ML Hive](https://mlhive.com/2026/04/microsoft-harrier-open-source-embedding-models-rag)
+  * 마이크로소프트가 상용 임베딩 모델(OpenAI, Google)의 성능을 능가하는 최대 27B 파라미터 규모의 다국어 오픈소스 임베딩 모델군 'Harrier'를 공개하여 기업용 RAG 구조의 혁신을 주도하고 있습니다.
+  * 초거대 파라미터를 기반으로 단어 구분의 혼동(Semantic crowding) 문제를 해결함으로써 컨텍스트의 미세한 차이를 예리하게 분별해내며, 번역 과정 없이도 100개 이상의 언어를 동일한 다국어 벡터 공간으로 일관성 있게 맵핑할 수 있습니다.
+  * 최상위 성능의 모델을 오픈소스로 무료 공개한 것은 검색 시스템 구축 문턱을 허물고 엔터프라이즈 AI 애플리케이션의 확산시키며, 나아가 이와 맞물린 마이크로소프트 자체 클라우드(Azure) 인프라 수요를 촉진하기 위한 전략적 선택("commoditizing your complement")으로 평가됩니다.
+
