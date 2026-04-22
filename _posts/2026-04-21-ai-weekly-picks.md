@@ -10,6 +10,19 @@ tags:
   - Reference
 ---
 
+# AI Daily Picks(20260423)
+
+* [Production-Grade LLM Inference at Scale with KServe, llm-d, and vLLM](https://llm-d.ai/blog/production-grade-llm-inference-at-scale-kserve-llm-d-vllm)
+  * 수백 개의 대형 언어 모델(LLM)을 스케일링하고 관리하는 과정에서 기존 vLLM의 단순 배포 방식이 가진 스토리지 지연, 인프라 종속성, 비효율적 로드 밸런싱 문제를 KServe, llm-d, vLLM 조합으로 해결한 사례를 공유합니다.
+  * KServe의 LLMInferenceService를 통해 표준 Kubernetes API 수준에서 vLLM 설정을 정밀하게 커스터마이징하여 하드웨어 특성에 맞는 유연한 배포를 가능하게 했습니다.
+  * Envoy 및 Gateway API Inference Extension을 활용한 접두어 캐시 인식 라우팅(prefix-cache aware routing)을 적용하여 GPU 효율성을 극대화했으며, 실제 Llama 3.1 70B 모델 배포에서 출력 토큰 생성 속도를 3배, 첫 토큰 응답 시간(TTFT)을 절반으로 단축하는 성과를 얻었습니다.
+
+* [Microsoft Open-Sources Embedding Models to Improve AI Data Retrieval](https://pureai.com/articles/2026/04/09/microsoft-open-sources-embedding-models-to-improve-ai-data-retrieval.aspx)
+  * 마이크로소프트가 단순한 키워드 매칭을 넘어 의미론적 연관성을 파악해 검색, 추천 및 데이터 검색 시스템의 기반을 이루는 새로운 AI 임베딩 모델 제품군(Harrier)을 오픈소스로 공개했습니다.
+  * 엔터프라이즈 AI가 실험 단계에서 실제 운영 환경으로 전환됨에 따라, 생성된 결과물의 정교함보다 검증된 실제 데이터에 기반하여 환각(오류)을 줄이고 신뢰성을 높이는 검색 증강 생성(RAG) 및 에이전트 시스템의 중요성이 커지고 있습니다.
+  * 100개 이상의 언어를 지원하고 다양한 환경에서 구동 가능한 이 고성능 임베딩 모델의 오픈소스화는, 개발자들이 폭넓은 애플리케이션에 이를 쉽게 통합할 수 있게 함으로써 기업의 내부 검색 도구 강화 및 AI 어시스턴트 성능 향상에 실질적으로 기여할 것으로 기대됩니다.
+
+
 # AI Daily Picks(20260422)
 
 * [From Models to Scientists: Building AI Agents for Scientific Discovery - Kempner Institute](https://kempnerinstitute.harvard.edu/research/deeper-learning/from-models-to-scientists-building-ai-agents-for-scientific-discovery)
