@@ -164,6 +164,7 @@ tags:
 | `docs/research/xxxxxxxxxxx/` (허브 + 4개 문서) | xxxxxxxxxxx 기능 조사, GPU 공유 비교, H-MAS 통합 설계 | `0b1c1f2` (PR #220) |
 
 **조사 범위**:
+
 | 영역 | 내용 |
 |------|------|
 | 멀티클러스터 아키텍처 | 이기종 스케줄러 환경(기본 K8s/xxxxxxxxxxx) 설계, 클러스터별 독립 스케줄러 |
