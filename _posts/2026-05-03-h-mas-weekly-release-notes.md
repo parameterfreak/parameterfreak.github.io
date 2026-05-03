@@ -1,7 +1,7 @@
 ---
 title: 'H-MAS release notes (2026-04-26~05-02)'
 date: 2026-05-03
-permalink: /posts/2026/04/h-mas-weekly-release-notes-0426-0502/
+permalink: /posts/2026/04/h-mas-weekly-release-notes-0426-0502
 categories:
   - H-MAS
 tags:
