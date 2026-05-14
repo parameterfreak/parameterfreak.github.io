@@ -12,7 +12,7 @@ tags:
 
 # AI Daily Picks(20260515)
 
-* [Teaching <Fundamentals of Machine Learning> - Kyunghyun Cho](https://kyunghyuncho.me/teaching-fundamentals-of-machine-learning/)
+* [Teaching 'Fundamentals of Machine Learning' - Kyunghyun Cho](https://kyunghyuncho.me/teaching-fundamentals-of-machine-learning/)
   * 코딩 어시스턴트(AI 툴)를 적극 활용하여 'Fundamentals of Machine Learning' 수업 방식을 전면 개편한 교수의 경험담.
   * 기존의 빈칸 채우기 식 실습에서 벗어나, 매주 배운 ML 개념을 바탕으로 밑바닥부터 완전한 웹 앱을 '바이브 코딩(vibe-coding)'하는 방식으로 수업을 진행함.
   * 학생들에게 자유도를 주고 스스로 AI 도구를 활용해 프로젝트를 완성하게 함으로써, 학생들의 창의성과 문제 해결 능력이 크게 향상됨을 관찰함.
@@ -25,7 +25,7 @@ tags:
   * 에이전틱(Agentic) 워크로드에 최적화된 새로운 초고속 LLM 추론 엔진인 TokenSpeed 발표 (LightSeek Foundation, NVIDIA, AMD 등 공동 개발).
   * Control Plane(상태 머신, 자원 관리)과 Execution Plane을 분리한 고성능 스케줄러 및 자동화된 모델링 병렬화 메커니즘을 도입함.
   * Tensor Core 활용도를 극대화한 자체 최적화 커널(TokenSpeed MLA 등)을 적용해, 에이전트 환경에서 TensorRT-LLM 대비 더 높은 처리량(TPM)과 더 낮은 지연 시간(TPS)을 달성함.
-* [State of Routing in Model Serving | Netflix TechBlog](https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741)
+* [State of Routing in Model Serving - Netflix TechBlog](https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741)
   * Netflix에서 초당 100만 건 이상의 요청을 처리하기 위해 구축한 중앙 집중식 ML 모델 서빙 플랫폼의 아키텍처 진화 과정 소개.
   * 초기에는 'Switchboard'라는 중앙 프록시를 통해 컨텍스트 기반 라우팅과 A/B 테스트를 처리했으나, 단일 장애점(SPOF) 문제와 네트워크 지연이 발생함.
   * 이를 해결하기 위해 라우팅 정보 리졸브(Lightbulb)와 실제 트래픽 라우팅(Envoy proxy) 계층을 분리하는 구조로 개편하여, 안정성과 성능을 개선함.
