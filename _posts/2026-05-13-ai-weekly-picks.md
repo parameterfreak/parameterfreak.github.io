@@ -1,6 +1,6 @@
 ---
 title: 'AI Weekly Picks(20주차)'
-date: 2026-05-06
+date: 2026-05-13
 permalink: /posts/2026/05/ai-weekly-picks-202620/
 categories:
   - Misc
@@ -10,7 +10,7 @@ tags:
   - Reference
 ---
 
-# AI Daily Picks(20260513)
+# AI Daily Picks(20260515)
 
 * [Teaching <Fundamentals of Machine Learning> - Kyunghyun Cho](https://kyunghyuncho.me/teaching-fundamentals-of-machine-learning/)
   * 코딩 어시스턴트(AI 툴)를 적극 활용하여 'Fundamentals of Machine Learning' 수업 방식을 전면 개편한 교수의 경험담.
