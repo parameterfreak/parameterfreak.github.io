@@ -308,12 +308,6 @@ tags:
 2. **심층 방어 보안 파이프라인 6종 구축**: PR 체크(#342) + Semgrep SAST(#349) + govulncheck/npm audit(#350) + gosec(#358) + gitleaks(#359) + Trivy(#360) + hadolint(#361) — v0.7 출시 전 전 계층 자동 보안 검증 확보
 3. **보안 핫픽스 즉시 대응**: x/net, Next.js, postcss 알려진 취약점 0건 달성(#348)
 
-**다음 주 계획**:
-- Trivy HIGH 차단 승격 및 hadolint warning 승격 트리아지 (#366, #367)
-- QoS-only 요청 OverridePolicy 오버라이더 누락 수정 (#355)
-- xxxxxxx 고아 Work 자동 정리 구현 (#316)
-- 추론 프록시 Phase 2: 멀티클러스터 라우팅 (#192)
-
 ---
 
 **문서 작성일**: 2026년 6월 14일
