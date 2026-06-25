@@ -18,7 +18,7 @@ redirect_from:
   <!-- ===================== HERO ===================== -->
   <section class="lp-section lp-hero">
     <div class="lp-wrap">
-      <p class="lp-hero__eyebrow">parameterfreak</p>
+      <p class="lp-hero__eyebrow">PARAMETERFREAK</p>
       <h1 class="lp-hero__title">확장 가능하고 지능적인<br/>AI 시스템을 설계하고 만듭니다</h1>
       <p class="lp-hero__lead">
         대규모 AI 서빙 인프라부터 지식 검색, 자율 에이전트까지 —

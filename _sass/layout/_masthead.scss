@@ -59,9 +59,16 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  font-size: 1.05em;
+  font-weight: 600;
+
+  a { padding: 0 0.2em; }
 
   &--lg {
     padding-right: 2em;
-    font-weight: 600;
+    font-size: 1.15em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
   }
 }
