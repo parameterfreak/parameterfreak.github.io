@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: splash
 permalink: /posts/
 title: "Blog"
 author_profile: false
@@ -9,12 +9,51 @@ redirect_from:
 ---
 
 {% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+
+<style>
+/* 이 페이지에서만: splash 본문 폭/여백 제거 */
+#main { max-width: none !important; padding: 0 !important; margin-top: 0 !important; }
+.page__content { margin: 0 !important; }
+</style>
+
+<div class="lp">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="lp-section lp-hero">
+    <div class="lp-wrap">
+      <p class="lp-hero__eyebrow">BLOG</p>
+      <h1 class="lp-hero__title">기록과 인사이트</h1>
+      <p class="lp-hero__lead">
+        H-MAS 릴리스 노트, AI 연구 노트, 주간 픽 등
+        만들고 탐구한 것들을 기록합니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== 글 목록 ===================== -->
+  <section class="lp-section lp-section--soft">
+    <div class="lp-wrap">
+      {% capture written_year %}'None'{% endcapture %}
+      {% for post in site.posts %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% if year != written_year %}
+          <h2 id="{{ year | slugify }}" class="lp-year">{{ year }}</h2>
+          {% capture written_year %}{{ year }}{% endcapture %}
+        {% endif %}
+        <a class="lp-post" href="{{ base_path }}{{ post.url }}">
+          <div class="lp-post__main">
+            <h3 class="lp-post__title">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
+            {% if post.excerpt %}
+              <p class="lp-post__excerpt">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 120 }}</p>
+            {% endif %}
+          </div>
+          <div class="lp-post__meta">
+            <span class="lp-post__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            {% if post.read_time %}<span class="lp-post__read">{% include read-time.html %}</span>{% endif %}
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+
+</div>

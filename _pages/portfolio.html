@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: splash
 title: "Solution"
 permalink: /solution/
 redirect_from:
@@ -9,10 +9,51 @@ author_profile: false
 
 {% include base_path %}
 
+<style>
+/* 이 페이지에서만: splash 본문 폭/여백 제거하여 풀-와이드 섹션 허용 */
+#main { max-width: none !important; padding: 0 !important; margin-top: 0 !important; }
+.page__content { margin: 0 !important; }
+</style>
 
-<div class="grid__wrapper">
-  {% for post in site.portfolio %}
-    {% include archive-single.html type="grid" %}
-  {% endfor %}
+<div class="lp">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="lp-section lp-hero">
+    <div class="lp-wrap">
+      <p class="lp-hero__eyebrow">SOLUTION</p>
+      <h1 class="lp-hero__title">AI를 실제로 굴리는 제품들</h1>
+      <p class="lp-hero__lead">
+        GPU 인프라부터 문서 생성까지 — 연구에서 출발해
+        실제로 만들고 운영하는 제품을 소개합니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== 제품 카드 ===================== -->
+  <section class="lp-section lp-section--soft">
+    <div class="lp-wrap">
+      <div class="lp-cards lp-cards--2">
+        {% for post in site.portfolio %}
+          {% if post.link %}
+            {% assign card_url = post.link %}
+          {% else %}
+            {% assign card_url = post.url | prepend: base_path %}
+          {% endif %}
+          <a class="lp-card lp-card--product" href="{{ card_url }}">
+            {% if post.header.teaser %}
+              <div class="lp-card__thumb">
+                <img src="{% if post.header.teaser contains '://' %}{{ post.header.teaser }}{% else %}{{ post.header.teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="{{ post.title | strip_html }}">
+              </div>
+            {% endif %}
+            <div class="lp-card__pad">
+              <h3 class="lp-card__title">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
+              <p class="lp-card__body">{{ post.excerpt | markdownify | strip_html | strip_newlines }}</p>
+              <span class="lp-card__more">자세히 보기 →</span>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
 </div>
-
