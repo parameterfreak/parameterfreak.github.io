@@ -1,7 +1,9 @@
 ---
 title: "PaperOps"
-excerpt: "AI기반의 문서 생성 관리<br/><img src='/images/portfolio/thumbnail.png'>"
+excerpt: "AI기반의 문서 생성 관리"
 collection: portfolio
+header:
+  teaser: portfolio/thumbnail.png
 ---
 
 ## 목적
