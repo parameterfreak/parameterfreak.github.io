@@ -1,6 +1,8 @@
 ---
 layout: splash
 permalink: /
+title: "AI 시스템을 설계하고 만듭니다"
+description: "흩어진 GPU를 하나로 묶는 온프레미스 AI 서빙 플랫폼 H-MAS를 비롯해, 대규모 AI 서빙 인프라·지식 검색·자율 에이전트까지 확장 가능한 AI 시스템을 연구하고 제품으로 만듭니다."
 author_profile: false
 redirect_from: 
   - /about/
