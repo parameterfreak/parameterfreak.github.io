@@ -3,6 +3,8 @@ title: "H-MAS — Hardware-aware Multi-Cluster AI Serving Platform"
 excerpt: "흩어진 GPU 서버를 하나로 묶어, AI 모델을 최적의 하드웨어에 자동 배치하는 온프레미스 AI 서빙 플랫폼"
 collection: portfolio
 link: /hmas/
+redirect_from:
+  - /portfolio/H-MAS/
 header:
   teaser: portfolio/hmas/pitch/dashboard.png
 ---

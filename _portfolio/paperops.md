@@ -2,6 +2,8 @@
 title: "PaperOps"
 excerpt: "AI기반의 문서 생성 관리"
 collection: portfolio
+redirect_from:
+  - /portfolio/paperops/
 header:
   teaser: portfolio/thumbnail.png
 ---
