@@ -12,4 +12,12 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- Force light mode: pin theme to light, ignore OS dark preference -->
+<script>
+  (function () {
+    try { localStorage.setItem("theme", "light"); } catch (e) {}
+    document.documentElement.removeAttribute("data-theme");
+  })();
+</script>
+
 <!-- end custom head snippets -->
