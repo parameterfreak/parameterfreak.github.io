@@ -1,5 +1,5 @@
 ---
-title: 'H-MAS release notes (2026-06-21~06-27)'
+title: 'H-MAS release notes (2026-06-21~06-28)'
 date: 2026-06-28
 permalink: /posts/2026/06/h-mas-weekly-release-notes-0621-0628
 categories:
