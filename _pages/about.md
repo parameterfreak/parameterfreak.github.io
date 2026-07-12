@@ -2,7 +2,7 @@
 layout: splash
 permalink: /about/
 title: "AI 시스템을 설계하고 만듭니다"
-description: "온프레미스 AI 서빙 플랫폼 H-MAS(모델 서빙·추론·GPU 클러스터 관리)를 비롯해, 대규모 AI 서빙 인프라·지식 검색·자율 에이전트까지 확장 가능한 AI 시스템을 연구하고 제품으로 만듭니다."
+description: "온프레미스 AI 서빙 플랫폼 H-MAS(모델 서빙·추론·GPU 클러스터 관리)를 비롯해, 대규모 AI 서빙 인프라·지식 검색·자율 에이전트까지 확장 가능한 AI 시스템을 직접 설계하고 제품으로 만듭니다."
 author_profile: false
 redirect_from: 
   - /about.html
@@ -23,7 +23,7 @@ redirect_from:
       <h1 class="lp-hero__title">확장 가능하고 지능적인<br/>AI 시스템을 설계하고 만듭니다</h1>
       <p class="lp-hero__lead">
         대규모 AI 서빙 인프라부터 지식 검색, 자율 에이전트까지 —
-        연구에 그치지 않고 실제 동작하는 제품으로 만듭니다.
+        기술 탐구에 그치지 않고 실제 동작하는 제품으로 만듭니다.
       </p>
       <div class="lp-cta">
         <a class="lp-btn lp-btn--primary" href="/solution/">제품 보기 →</a>
@@ -35,8 +35,8 @@ redirect_from:
   <!-- ===================== Research Areas ===================== -->
   <section class="lp-section">
     <div class="lp-wrap">
-      <p class="lp-eyebrow">RESEARCH AREAS</p>
-      <h2 class="lp-h2">무엇을 연구하나</h2>
+      <p class="lp-eyebrow">FOCUS AREAS</p>
+      <h2 class="lp-h2">무엇을 파고드나</h2>
       <p class="lp-sub">AI 시스템을 효율적으로, 똑똑하게, 자율적으로 만드는 세 가지 축.</p>
       <div class="lp-cards">
         <div class="lp-card">
@@ -62,8 +62,8 @@ redirect_from:
   <section class="lp-section lp-section--soft">
     <div class="lp-wrap">
       <p class="lp-eyebrow">PROJECTS</p>
-      <h2 class="lp-h2">연구를 제품으로</h2>
-      <p class="lp-sub">연구에서 출발해 실제로 만들고 운영하는 프로젝트들.</p>
+      <h2 class="lp-h2">기술을 제품으로</h2>
+      <p class="lp-sub">아이디어에서 출발해 실제로 만들고 운영하는 프로젝트들.</p>
       <div class="lp-cards">
         <a class="lp-card" href="/" style="text-decoration:none;color:inherit;">
           <h3 class="lp-card__title">H-MAS</h3>
@@ -79,7 +79,7 @@ redirect_from:
         </div>
         <div class="lp-card">
           <h3 class="lp-card__title">LexEM</h3>
-          <p class="lp-card__body">법령 특화 임베딩 모델 연구.</p>
+          <p class="lp-card__body">법령 특화 임베딩 모델.</p>
         </div>
         <div class="lp-card">
           <h3 class="lp-card__title">Misc</h3>
