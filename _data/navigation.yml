@@ -28,7 +28,10 @@ main:
 
   - title: "Blog"
     url: /posts/
-    
+
+  - title: "About"
+    url: /about/
+
   #- title: "CV"
   #  url: /cv/
     

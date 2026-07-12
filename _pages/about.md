@@ -1,11 +1,10 @@
 ---
 layout: splash
-permalink: /
+permalink: /about/
 title: "AI 시스템을 설계하고 만듭니다"
 description: "온프레미스 AI 서빙 플랫폼 H-MAS(모델 서빙·추론·GPU 클러스터 관리)를 비롯해, 대규모 AI 서빙 인프라·지식 검색·자율 에이전트까지 확장 가능한 AI 시스템을 연구하고 제품으로 만듭니다."
 author_profile: false
 redirect_from: 
-  - /about/
   - /about.html
 ---
 
@@ -66,7 +65,7 @@ redirect_from:
       <h2 class="lp-h2">연구를 제품으로</h2>
       <p class="lp-sub">연구에서 출발해 실제로 만들고 운영하는 프로젝트들.</p>
       <div class="lp-cards">
-        <a class="lp-card" href="/hmas/" style="text-decoration:none;color:inherit;">
+        <a class="lp-card" href="/" style="text-decoration:none;color:inherit;">
           <h3 class="lp-card__title">H-MAS</h3>
           <p class="lp-card__body">흩어진 GPU 서버를 묶어 AI 모델을 최적의 하드웨어에 자동 배치하는 온프레미스 AI 서빙 플랫폼.</p>
         </a>
