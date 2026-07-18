@@ -396,7 +396,7 @@ GPU-occupying pods: 0
 
 ## 3. 2부: 같은 일을 H-MAS로
 
-이번엔 같은 클러스터, 같은 모델, 같은 이미지를 H-MAS로 배포합니다. H-MAS 설치 자체는 이 글의 범위가 아니므로(이번 실측에서도 이미 설치된 환경을 사용했습니다) 설치 절차는 기존 문서를 참고해 주세요. 웹 콘솔은 `http://research.shrinklabs.com:9110`입니다.
+이번엔 같은 클러스터, 같은 모델, 같은 이미지를 H-MAS로 배포합니다. H-MAS 설치 자체는 이 글의 범위가 아니므로(이번 실측에서도 이미 설치된 환경을 사용했습니다) 설치 절차는 기존 문서를 참고해 주세요. 웹 콘솔은 `http://research.parameterfreak.com:9110`입니다.
 
 ### 3.1 웹 콘솔에서 배포
 
@@ -460,10 +460,10 @@ hmas-blog-qwen-5f9486b5c6-mvh7s	vllm/vllm-openai:v0.19.1-cu130-ubuntu2404
 
 *API 키 관리 화면: 키 목록과 RPM 표시 (이번 실측 환경에서 캡처)*
 
-배포된 모델은 OpenAI 호환 추론 프록시 `http://research.shrinklabs.com:9110/api/inference/blog-qwen/v1`로 노출됩니다. 프록시는 발급받은 키를 `Authorization: Bearer` 헤더로 받습니다. curl로 확인해 봅니다. (`$HMAS_KEY`에는 발급받은 키 원문을 넣습니다.)
+배포된 모델은 OpenAI 호환 추론 프록시 `http://research.parameterfreak.com:9110/api/inference/blog-qwen/v1`로 노출됩니다. 프록시는 발급받은 키를 `Authorization: Bearer` 헤더로 받습니다. curl로 확인해 봅니다. (`$HMAS_KEY`에는 발급받은 키 원문을 넣습니다.)
 
 ```bash
-HMAS=http://research.shrinklabs.com:9110
+HMAS=http://research.parameterfreak.com:9110
 
 curl -s -H "Authorization: Bearer $HMAS_KEY" "$HMAS/api/inference/blog-qwen/v1/models" | python3 -m json.tool
 ```
@@ -514,7 +514,7 @@ curl -s -H "Authorization: Bearer $HMAS_KEY" -H "Content-Type: application/json"
 2.5절의 챗봇 스크립트를 코드 수정 없이 그대로 씁니다. 바꾸는 것은 엔드포인트와 API 키, 환경 변수 두 개뿐입니다.
 
 ```bash
-CHAT_BASE_URL=http://research.shrinklabs.com:9110/api/inference/blog-qwen/v1 \
+CHAT_BASE_URL=http://research.parameterfreak.com:9110/api/inference/blog-qwen/v1 \
 CHAT_API_KEY=sk-hmas-d858...(발급받은 키) \
 python chatbot.py
 ```
@@ -523,7 +523,7 @@ python chatbot.py
 
 ```text
 모델: Qwen/Qwen2.5-1.5B-Instruct
-엔드포인트: http://research.shrinklabs.com:9110/api/inference/blog-qwen/v1
+엔드포인트: http://research.parameterfreak.com:9110/api/inference/blog-qwen/v1
 대화를 시작하세요. 종료: /quit
 
 나> 안녕하세요! 이번엔 H-MAS 추론 프록시를 통해 접속했어요. 자기소개 부탁해요.
