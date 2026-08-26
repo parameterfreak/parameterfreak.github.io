@@ -132,3 +132,151 @@ a { color: var(--pf-blue); }
   color: var(--pf-mute);
   font-size: 0.78rem;
 }
+
+/* ---- article --------------------------------------------------------- */
+#main.art {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 680px);
+  justify-content: center;
+  gap: 3.5rem;
+  @media (min-width: 1024px) { grid-template-columns: 200px minmax(0, 680px); }
+}
+.art__body {
+  min-width: 0;
+  @media (min-width: 1024px) { grid-column: 2; }   /* stay in the text column even when the TOC is hidden */
+}
+.art__toc {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+    position: sticky;
+    top: 1.5rem;
+    align-self: start;
+    font-size: 0.85rem;
+  }
+  &[hidden] { display: none; }
+}
+.art__toc-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pf-mute);
+  font-weight: 500;
+  margin: 0 0 0.6rem;
+}
+#art-toc a {
+  display: block;
+  padding: 0.3rem 0 0.3rem 0.8rem;
+  border-left: 2px solid var(--pf-line);
+  color: var(--pf-mute);
+  text-decoration: none;
+  line-height: 1.4;
+  &:hover { color: var(--pf-ink); border-color: var(--pf-blue); }
+}
+.art__crumb {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--pf-blue);
+  letter-spacing: 0.04em;
+  margin: 0 0 0.9rem;
+  a { color: inherit; text-decoration: none; }
+}
+.art__title {
+  font-size: 2.375rem;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+  text-wrap: balance;
+  @media (max-width: 600px) { font-size: 1.75rem; }
+}
+.art__meta {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 0.82rem;
+  color: var(--pf-mute);
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--pf-line);
+  margin: 0 0 1.75rem;
+  time { font-family: $pf-mono; color: var(--pf-ink); }
+}
+.art__content {
+  font-size: 0.97rem;
+  line-height: 1.85;
+  color: #2a2f3a;
+  h1 { font-size: 1.5rem; margin: 2.2rem 0 0.75rem; }          /* markdown bodies that start with '# ' */
+  h2 { font-size: 1.375rem; margin: 2.2rem 0 0.75rem; padding: 0; border: 0; }
+  h3 { font-size: 1.1rem; margin: 1.6rem 0 0.5rem; }
+  h4 { font-size: 1rem; margin: 1.2rem 0 0.4rem; }
+  p { margin: 0 0 1.1rem; }
+  ul, ol { padding-left: 1.3rem; margin: 0 0 1.1rem; }
+  li { margin: 0.2rem 0; }
+  a { color: var(--pf-blue); text-decoration: underline; text-underline-offset: 2px; }
+  code { font-family: $pf-mono; font-size: 0.85em; background: var(--pf-soft); padding: 0.1em 0.4em; border-radius: 4px; }
+  pre {
+    font-family: $pf-mono;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    background: var(--pf-soft);
+    border: 1px solid var(--pf-line);
+    padding: 1rem 1.1rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 0 0 1.2rem;
+    code { background: none; padding: 0; font-size: inherit; }
+  }
+  div.highlighter-rouge, figure.highlight { border-radius: 10px; margin: 0 0 1.2rem; }
+  img { max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--pf-line); }
+  blockquote {
+    margin: 0 0 1.2rem;
+    padding: 0.2rem 0 0.2rem 1.1rem;
+    border-left: 3px solid var(--pf-blue);
+    color: var(--pf-grey);
+    font-style: normal;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 0 0 1.2rem; display: block; overflow-x: auto; }
+  th, td { padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--pf-line); text-align: left; vertical-align: top; }
+  th { font-weight: 600; border-bottom-color: var(--pf-ink); background: none; }
+  hr { border: 0; border-top: 1px solid var(--pf-line); margin: 2rem 0; }
+}
+.art__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 2rem 0 0;
+  a {
+    font-size: 0.75rem;
+    border: 1px solid var(--pf-line);
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    color: var(--pf-grey);
+    text-decoration: none;
+    &:hover { border-color: var(--pf-ink); color: var(--pf-ink); }
+  }
+}
+.art__pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--pf-line);
+  a {
+    text-decoration: none;
+    color: var(--pf-ink);
+    font-weight: 500;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    small {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--pf-mute);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+  }
+  .art__pager-next { text-align: right; }
+}
