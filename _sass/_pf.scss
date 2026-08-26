@@ -1,0 +1,134 @@
+/* ==========================================================================
+   PARAMETERFREAK — design tokens, theme overrides, nav, footer, article.
+   Imported from assets/css/main.scss after the theme partials.
+   ========================================================================== */
+
+$pf-display: "Gothic A1", "Noto Sans KR", sans-serif;
+$pf-body:    "Noto Sans KR", -apple-system, "Segoe UI", sans-serif;
+$pf-mono:    "IBM Plex Mono", Menlo, Consolas, monospace;
+
+:root {
+  --pf-bg:        #ffffff;
+  --pf-ink:       #16181d;
+  --pf-grey:      #4b4f57;
+  --pf-mute:      #6b6f78;
+  --pf-line:      #e9eaec;
+  --pf-soft:      #f7f7f8;
+  --pf-blue:      #063ad7;
+  --pf-blue-soft: #e8edfb;
+
+  /* remap academicpages variables so untouched theme components follow the palette */
+  --global-base-color:            var(--pf-grey);
+  --global-bg-color:              var(--pf-bg);
+  --global-footer-bg-color:       var(--pf-bg);
+  --global-border-color:          var(--pf-line);
+  --global-dark-border-color:     var(--pf-line);
+  --global-code-background-color: var(--pf-soft);
+  --global-code-text-color:       var(--pf-ink);
+  --global-fig-caption-color:     var(--pf-mute);
+  --global-link-color:            var(--pf-blue);
+  --global-link-color-hover:      #042a9c;
+  --global-link-color-visited:    var(--pf-blue);
+  --global-masthead-link-color:   var(--pf-ink);
+  --global-masthead-link-color-hover: var(--pf-blue);
+  --global-text-color:            var(--pf-ink);
+  --global-text-color-light:      var(--pf-mute);
+  --global-thead-color:           var(--pf-soft);
+}
+
+/* ---- theme structure overrides -------------------------------------- */
+html { position: static; }                 /* drop sticky-footer hack */
+body {
+  padding: 0;                              /* theme reserved space for a fixed masthead */
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 { letter-spacing: -0.02em; margin: 1.6em 0 0.5em; }
+a { color: var(--pf-blue); }
+#main { animation: none; }
+.page__footer {
+  position: static;
+  float: none;
+  width: auto;
+  margin-top: 0;
+  animation: none;
+  border-top: 1px solid var(--pf-line);
+  background: var(--pf-bg);
+  color: var(--pf-grey);
+  footer { max-width: none; margin: 0; padding: 0; }
+}
+
+/* ---- nav ------------------------------------------------------------- */
+.pf-nav {
+  background: var(--pf-bg);
+  border-bottom: 1px solid var(--pf-line);
+}
+.pf-nav__wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.pf-nav__logo {
+  font-family: $pf-display;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  color: var(--pf-ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.pf-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  a { color: var(--pf-grey); text-decoration: none; }
+  a:hover, a[aria-current="page"] { color: var(--pf-ink); }
+}
+.pf-nav__cta {
+  background: var(--pf-blue);
+  color: #fff !important;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  &:hover { background: #042a9c; }
+}
+@media (max-width: 600px) {
+  .pf-nav__wrap { height: 56px; padding: 0 1rem; }
+  .pf-nav__links { gap: 1rem; font-size: 0.82rem; }
+  .pf-nav__cta { display: none; }
+}
+
+/* ---- footer ---------------------------------------------------------- */
+.pf-footer { font-size: 0.85rem; }
+.pf-footer__wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+}
+.pf-footer__brand p { margin: 0.4rem 0 0; color: var(--pf-mute); }
+.pf-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  a { color: var(--pf-grey); text-decoration: none; &:hover { color: var(--pf-ink); } }
+}
+.pf-footer__mail { color: var(--pf-ink); text-decoration: none; font-weight: 500; }
+.pf-footer__copy {
+  padding-top: 0;
+  padding-bottom: 2rem;
+  color: var(--pf-mute);
+  font-size: 0.78rem;
+}
