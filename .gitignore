@@ -19,4 +19,8 @@ package-lock.json
 # Ignore folders related to IDEs
 .vscode/
 
-.DS_Store.rubyenv
+.DS_Store
+.rubyenv
+.playwright-mcp/
+_config_dev.yml
+.superpowers/
