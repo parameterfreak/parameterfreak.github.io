@@ -125,6 +125,9 @@ staticman:
 atom_feed:
   hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
+feed:
+  collections:
+    - changelog
 
 
 # SEO Related
@@ -231,6 +234,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  changelog:
+    output: true
+    permalink: /changelog/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -280,6 +286,16 @@ defaults:
       author_profile: false
       share: true
       comment: true
+  # _changelog
+  - scope:
+      path: ""
+      type: changelog
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: true
+      share: true
   # _talks
   - scope:
       path: ""

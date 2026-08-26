@@ -29,6 +29,9 @@ main:
   - title: "Blog"
     url: /posts/
 
+  - title: "Changelog"
+    url: /changelog/
+
   - title: "About"
     url: /about/
 
