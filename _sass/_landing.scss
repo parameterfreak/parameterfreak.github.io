@@ -171,18 +171,18 @@
 /* ---- cards ------------------------------------------------------------- */
 .lp-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.75rem;
-  @media (max-width: 860px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 860px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   @media (max-width: 560px) { grid-template-columns: 1fr; }
 }
 .lp-cards--2 {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   @media (max-width: 720px) { grid-template-columns: 1fr; }
 }
 .lp-cards--4 {
-  grid-template-columns: repeat(4, 1fr);
-  @media (max-width: 860px) { grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  @media (max-width: 860px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   @media (max-width: 480px) { grid-template-columns: 1fr; }
 }
 .lp-card {
@@ -235,10 +235,15 @@
 /* ---- stats ------------------------------------------------------------- */
 .lp-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.75rem;
-  @media (max-width: 720px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 720px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+.lp-stats--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  @media (max-width: 720px) { grid-template-columns: minmax(0, 1fr); }
+}
+.lp-stats--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .lp-stat {
   padding: 1.25rem 0 0;
   border-top: 2px solid var(--pf-ink);
@@ -272,7 +277,7 @@
 }
 .lp-shots {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   align-items: start;
   @media (max-width: 820px) { grid-template-columns: 1fr; }
@@ -286,7 +291,7 @@
 }
 .lp-pair {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 1.5rem;
   @media (max-width: 720px) { grid-template-columns: 1fr; }
 }
@@ -294,7 +299,7 @@
 /* ---- split / lists ------------------------------------------------------ */
 .lp-split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 2.5rem;
   align-items: center;
   @media (max-width: 820px) { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -353,10 +358,10 @@
 /* ---- steps ------------------------------------------------------------- */
 .lp-steps {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   margin-bottom: 2rem;
-  @media (max-width: 700px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 700px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 .lp-step {
   display: flex;
