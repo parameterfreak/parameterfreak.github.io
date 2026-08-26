@@ -24,7 +24,7 @@ main:
   #  url: /about/
 
   - title: "Products"
-    url: /solution/
+    url: /products/
 
   - title: "Changelog"
     url: /changelog/
