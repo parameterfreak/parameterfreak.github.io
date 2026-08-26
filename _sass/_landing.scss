@@ -442,3 +442,39 @@
   .lp-sub { margin-left: auto; margin-right: auto; }
   .lp-cta { justify-content: center; }
 }
+
+/* ---- contact form ---------------------------------------------------------- */
+.lp-form { display: flex; flex-direction: column; gap: 1.1rem; }
+.lp-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--pf-grey);
+  input, select, textarea {
+    font: inherit;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: var(--pf-ink);
+    background: var(--pf-bg);
+    border: 1px solid #cfd1d6;
+    border-radius: 10px;
+    padding: 0.7rem 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+    &:focus { outline: none; border-color: var(--pf-blue); box-shadow: 0 0 0 3px var(--pf-blue-soft); }
+  }
+  textarea { resize: vertical; min-height: 9rem; }
+}
+.lp-form .lp-btn { border: 0; cursor: pointer; font-family: inherit; }
+.lp-contact-side { @media (min-width: 821px) { padding-left: 1rem; } }
+.lp-contact-side__mail {
+  font-family: $pf-display;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0.4rem 0 0;
+  overflow-wrap: anywhere;
+  a { color: var(--pf-ink); &:hover { color: var(--pf-blue); } }
+}
