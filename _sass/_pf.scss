@@ -42,6 +42,7 @@ body {
   padding: 0;                              /* theme reserved space for a fixed masthead */
   font-size: 16px;
   line-height: 1.75;
+  word-break: keep-all;                    /* Korean: never break inside a word */
   -webkit-font-smoothing: antialiased;
 }
 h1, h2, h3, h4, h5, h6 { letter-spacing: -0.02em; margin: 1.6em 0 0.5em; }
