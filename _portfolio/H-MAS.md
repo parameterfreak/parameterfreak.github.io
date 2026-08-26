@@ -6,7 +6,7 @@ link: /hmas/
 redirect_from:
   - /portfolio/H-MAS/
 header:
-  teaser: portfolio/hmas/pitch/dashboard.png
+  teaser: portfolio/hmas/v0.7/02-dashboard.png
 ---
 
 ## 제품 개요
@@ -16,7 +16,7 @@ H-MAS는 온프레미스 환경에 분산된 GPU 서버들을 하나의 플랫�
 여러 대의 GPU 서버를 하나의 컨트롤 플레인으로 묶고, 웹 콘솔에서 모델을 선택해 배포하면 GPU의 물리적 연결 구조를 고려하여 최적의 위치에 자동으로 스케줄링합니다. 장애 시에는 다른 클러스터로 자동 재배치하여 서빙 연속성을 보장합니다.
 
 <p align="center">
-  <img src="/images/portfolio/hmas/pitch/dashboard.png" alt="H-MAS 대시보드" width="800"/>
+  <img src="/images/portfolio/hmas/v0.7/02-dashboard.png" alt="H-MAS 대시보드" width="800"/>
   <br/>
   <em>H-MAS 대시보드 — 클러스터 상태, GPU 토폴로지, 인스턴스 현황을 한눈에 확인</em>
 </p>
@@ -125,9 +125,9 @@ H-MAS에서 AI 모델을 배포하는 과정입니다. 모델 선택 → 배치 
 
 <table>
   <tr>
-    <td><img src="/images/portfolio/hmas/pitch/model-registry.png" width="280" alt="모델 저장소"/></td>
+    <td><img src="/images/portfolio/hmas/v0.7/04-models.png" width="280" alt="모델 저장소"/></td>
     <td><img src="/images/portfolio/hmas/pitch/runtime-compatibility.png" width="280" alt="런타임 호환성"/></td>
-    <td><img src="/images/portfolio/hmas/pitch/instance-detail.png" width="280" alt="인스턴스 상세"/></td>
+    <td><img src="/images/portfolio/hmas/v0.7/07-instance-detail.png" width="280" alt="인스턴스 상세"/></td>
   </tr>
   <tr>
     <td align="center"><b>모델 저장소</b></td>
@@ -326,7 +326,7 @@ QoS 기반 스케줄링과 GPU 공유를 통해, 기존에 모델 하나가 점�
 ### 대시보드
 
 <p align="center">
-  <img src="/images/portfolio/hmas/pitch/dashboard.png" alt="대시보드 화면" width="800"/>
+  <img src="/images/portfolio/hmas/v0.7/02-dashboard.png" alt="대시보드 화면" width="800"/>
   <br/>
   <em>대시보드 — 통계 카드, 인스턴스 상태 차트, GPU 토폴로지, 최근 활동을 한 화면에서 확인</em>
 </p>
@@ -361,7 +361,7 @@ QoS 기반 스케줄링과 GPU 공유를 통해, 기존에 모델 하나가 점�
 ### 모델 배포
 
 <p align="center">
-  <img src="/images/portfolio/hmas/pitch/deploy-form.png" alt="모델 배포 화면" width="800"/>
+  <img src="/images/portfolio/hmas/v0.7/05-deploy.png" alt="모델 배포 화면" width="800"/>
   <br/>
   <em>모델 배포 — 모델 선택, 서빙 런타임, 배치 전략을 한 화면에서 설정하는 배포 폼</em>
 </p>
@@ -374,7 +374,7 @@ QoS 기반 스케줄링과 GPU 공유를 통해, 기존에 모델 하나가 점�
 ### 인스턴스 관리
 
 <p align="center">
-  <img src="/images/portfolio/hmas/pitch/instances.png" alt="인스턴스 목록" width="800"/>
+  <img src="/images/portfolio/hmas/v0.7/06-instances.png" alt="인스턴스 목록" width="800"/>
   <br/>
   <em>인스턴스 목록 — 상태, 런타임, 클러스터별 필터링과 검색</em>
 </p>
@@ -384,7 +384,7 @@ QoS 기반 스케줄링과 GPU 공유를 통해, 기존에 모델 하나가 점�
 - 인스턴스별 일시정지/재시작, 스케일(Replicas) 조정, 삭제 *(v0.7 제공)*
 
 <p align="center">
-  <img src="/images/portfolio/hmas/pitch/instance-detail.png" alt="인스턴스 상세" width="800"/>
+  <img src="/images/portfolio/hmas/v0.7/07-instance-detail.png" alt="인스턴스 상세" width="800"/>
   <br/>
   <em>인스턴스 상세 — 외부 엔드포인트, 리소스 현황, 런타임 설정을 한눈에 확인</em>
 </p>
@@ -392,7 +392,7 @@ QoS 기반 스케줄링과 GPU 공유를 통해, 기존에 모델 하나가 점�
 ### 모니터링 및 로그
 
 <p align="center">
-  <img src="/images/portfolio/hmas/pitch/monitoring.png" alt="모니터링 및 로그" width="800"/>
+  <img src="/images/portfolio/hmas/v0.7/08-monitoring.png" alt="모니터링 및 로그" width="800"/>
   <br/>
   <em>모니터링 — GPU 사용량, 메모리, TPS, 지연시간 차트와 Pod 로그</em>
 </p>

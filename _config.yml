@@ -144,7 +144,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "portfolio/hmas/pitch/dashboard.png"  # Social media default site image (relative to /images/)
+og_image                 : "portfolio/hmas/v0.7/02-dashboard.png"  # Social media default site image (relative to /images/)
 og_description           : *description  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles

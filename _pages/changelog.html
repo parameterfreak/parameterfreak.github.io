@@ -19,7 +19,7 @@ author_profile: false
   <!-- ===================== HERO ===================== -->
   <section class="lp-section lp-hero">
     <div class="lp-wrap">
-      <p class="lp-hero__eyebrow">CHANGELOG</p>
+      <p class="lp-hero__eyebrow">Changelog</p>
       <h1 class="lp-hero__title">제품 릴리스 노트</h1>
       <p class="lp-hero__lead">
         H-MAS, PaperOps, DataProc 등 만들고 운영하는 제품들의 변경 이력을 기록합니다.
@@ -46,7 +46,6 @@ author_profile: false
               </div>
               <div class="lp-post__meta">
                 <span class="lp-post__date">{{ post.date | date: "%Y.%m.%d" }}</span>
-                {% if post.read_time %}<span class="lp-post__read">{% include read-time.html %}</span>{% endif %}
               </div>
             </a>
           {% endfor %}
