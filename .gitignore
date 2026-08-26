@@ -19,4 +19,4 @@ package-lock.json
 # Ignore folders related to IDEs
 .vscode/
 
-.DS_Store
+.DS_Store.rubyenv
