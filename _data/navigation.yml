@@ -23,17 +23,15 @@ main:
   #- title: "About"
   #  url: /about/
 
-  - title: "Solution"
+  - title: "Products"
     url: /solution/
-
-  - title: "Blog"
-    url: /posts/
 
   - title: "Changelog"
     url: /changelog/
 
-  - title: "About"
-    url: /about/
+  - title: "Blog"
+    url: /posts/
+
 
   #- title: "CV"
   #  url: /cv/

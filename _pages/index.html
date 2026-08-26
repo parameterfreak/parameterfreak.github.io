@@ -1,0 +1,131 @@
+---
+layout: splash
+permalink: /
+title: "parameterfreak — AI 시스템을 설계하고 만듭니다"
+description: "온프레미스 AI 서빙 플랫폼 H-MAS, 임베딩·이상탐지 연구, 그리고 이를 제품으로 만드는 AI 소프트웨어. parameterfreak은 AI 시스템을 직접 설계하고 만듭니다."
+author_profile: false
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+{% include base_path %}
+
+<style>
+/* 이 페이지에서만: splash 본문 폭/여백 제거하여 풀-와이드 섹션 허용 */
+#main { max-width: none !important; padding: 0 !important; margin-top: 0 !important; }
+.page__content { margin: 0 !important; }
+</style>
+
+<div class="lp">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="lp-section lp-hero">
+    <div class="lp-wrap">
+      <p class="lp-hero__eyebrow">PARAMETERFREAK</p>
+      <h1 class="lp-hero__title">확장 가능하고 지능적인<br/>AI 시스템을 설계하고 만듭니다</h1>
+      <p class="lp-hero__lead">
+        GPU를 묶어 AI를 서빙하는 플랫폼, 임베딩·이상탐지 연구,
+        그리고 그 기술을 담은 AI 소프트웨어 — 탐구에 그치지 않고 실제 동작하는 제품으로 만듭니다.
+      </p>
+      <div class="lp-cta">
+        <a class="lp-btn lp-btn--primary" href="/hmas/">H-MAS 알아보기 →</a>
+        <a class="lp-btn lp-btn--ghost" href="/solution/">제품 전체</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== What we do ===================== -->
+  <section class="lp-section">
+    <div class="lp-wrap">
+      <p class="lp-eyebrow">WHAT WE DO</p>
+      <h2 class="lp-h2">세 가지 축</h2>
+      <p class="lp-sub">플랫폼을 만들고, 모델을 연구하고, 소프트웨어로 묶습니다.</p>
+      <div class="lp-cards">
+        <a class="lp-card" href="/hmas/" style="text-decoration:none;color:inherit;">
+          <div class="lp-card__icon">⚙️</div>
+          <h3 class="lp-card__title">AI 서빙 플랫폼</h3>
+          <p class="lp-card__body">흩어진 GPU 서버를 하나로 묶어 모델을 최적의 하드웨어에 자동 배치하는 온프레미스 서빙 플랫폼 H-MAS. 멀티 클러스터 스케줄링, 통합 추론 API, GPU 활용률 최적화.</p>
+        </a>
+        <a class="lp-card" href="/posts/" style="text-decoration:none;color:inherit;">
+          <div class="lp-card__icon">🔎</div>
+          <h3 class="lp-card__title">AI 연구 — 임베딩 · 이상탐지</h3>
+          <p class="lp-card__body">도메인 특화 임베딩 모델(법령 LexEM 등)과 검색·RAG 아키텍처, 그리고 시계열·로그 기반 이상탐지. 연구 노트는 블로그에 공개합니다.</p>
+        </a>
+        <a class="lp-card" href="/solution/" style="text-decoration:none;color:inherit;">
+          <div class="lp-card__icon">🧩</div>
+          <h3 class="lp-card__title">AI 소프트웨어</h3>
+          <p class="lp-card__body">연구와 플랫폼 위에 올리는 응용 소프트웨어. AI 문서 생성 PaperOps, RAG 데이터셋 버전 관리 DataProc, MCP 도구 등.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Flagship ===================== -->
+  <section class="lp-section lp-section--soft">
+    <div class="lp-wrap">
+      <p class="lp-eyebrow">FLAGSHIP</p>
+      <h2 class="lp-h2">H-MAS</h2>
+      <p class="lp-sub">Hardware-aware Multi-Cluster AI Serving Platform — 클라우드 없이도 AI를 가장 효율적으로 서빙합니다.</p>
+      <div class="lp-cards lp-cards--2">
+        <a class="lp-card lp-card--product" href="/hmas/">
+          <div class="lp-card__thumb">
+            <img src="{{ base_path }}/images/portfolio/hmas/pitch/dashboard.png" alt="H-MAS 대시보드">
+          </div>
+          <div class="lp-card__pad">
+            <h3 class="lp-card__title">온프레미스 AI 서빙 플랫폼</h3>
+            <p class="lp-card__body">웹 콘솔에서 모델을 고르면 토폴로지(NVLink/PCIe/NUMA)를 인식해 자동 배치. 자체 GPU를 클라우드처럼 씁니다.</p>
+            <span class="lp-card__more">자세히 보기 →</span>
+          </div>
+        </a>
+        <div class="lp-card lp-card--product">
+          <div class="lp-card__pad">
+            <h3 class="lp-card__title">최근 릴리스</h3>
+            {% assign notes = site.changelog | where_exp: "n", "n.categories.first == 'H-MAS'" | sort: "date" | reverse %}
+            {% for post in notes limit: 3 %}
+              <a class="lp-post" href="{{ base_path }}{{ post.url }}">
+                <div class="lp-post__main">
+                  <h4 class="lp-post__title">{{ post.title }}</h4>
+                </div>
+                <div class="lp-post__meta"><span class="lp-post__date">{{ post.date | date: "%Y.%m.%d" }}</span></div>
+              </a>
+            {% endfor %}
+            <a class="lp-card__more" href="/changelog/">전체 Changelog →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Recent posts ===================== -->
+  <section class="lp-section">
+    <div class="lp-wrap">
+      <p class="lp-eyebrow">BLOG</p>
+      <h2 class="lp-h2">최근 글</h2>
+      {% for post in site.posts limit: 3 %}
+        <a class="lp-post" href="{{ base_path }}{{ post.url }}">
+          <div class="lp-post__main">
+            <h3 class="lp-post__title">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
+            {% if post.excerpt %}
+              <p class="lp-post__excerpt">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 120 }}</p>
+            {% endif %}
+          </div>
+          <div class="lp-post__meta"><span class="lp-post__date">{{ post.date | date: "%Y.%m.%d" }}</span></div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- ===================== Contact ===================== -->
+  <section class="lp-section lp-final">
+    <div class="lp-wrap">
+      <h2 class="lp-h2">함께 이야기해요</h2>
+      <p class="lp-sub">제품 도입, 연구 협업, 무엇이든 편하게 연락 주세요.</p>
+      <div class="lp-cta">
+        <a class="lp-btn lp-btn--line" href="/solution/">제품 보기</a>
+        <a class="lp-btn lp-btn--solid" href="mailto:contact@parameterfreak.com">contact@parameterfreak.com</a>
+      </div>
+    </div>
+  </section>
+
+</div>
