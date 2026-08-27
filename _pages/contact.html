@@ -27,7 +27,9 @@ author_profile: false
     <div class="lp-wrap">
       <div class="lp-split" style="align-items:start;">
 
-        <form class="lp-form" id="contact-form" action="mailto:contact@parameterfreak.com" method="post" enctype="text/plain">
+        <form class="lp-form" id="contact-form" action="https://formspree.io/f/xaeywrvg" method="post">
+          <input type="hidden" name="_subject" id="contact-subject" value="[문의] parameterfreak.com"/>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
           <label class="lp-form__field">
             <span>이름</span>
             <input type="text" name="name" required autocomplete="name"/>
@@ -54,15 +56,15 @@ author_profile: false
             <textarea name="message" rows="6" required placeholder="보유하신 GPU 환경, 운영 중인 모델, 원하시는 일정 등을 적어주시면 더 정확히 답변드릴 수 있습니다."></textarea>
           </label>
           <div class="lp-cta">
-            <button class="lp-btn lp-btn--primary" type="submit">메일로 보내기 →</button>
+            <button class="lp-btn lp-btn--primary" type="submit">보내기 →</button>
           </div>
-          <p class="lp-note">버튼을 누르면 내용이 채워진 메일 초안이 열립니다. 메일 앱에서 <b>보내기</b>를 눌러야 접수됩니다.</p>
+          <p class="lp-note" id="contact-status">보내주신 내용은 contact@parameterfreak.com으로 전달됩니다.</p>
         </form>
 
         <aside class="lp-contact-side">
           <p class="lp-eyebrow">Direct</p>
           <h2 class="lp-card__title">메일로 직접 보내기</h2>
-          <p class="lp-card__body">메일 앱이 열리지 않으면 아래 주소로 직접 보내주세요.</p>
+          <p class="lp-card__body">폼 대신 메일로 보내셔도 됩니다.</p>
           <p class="lp-contact-side__mail"><a href="mailto:contact@parameterfreak.com">contact@parameterfreak.com</a></p>
 
           <p class="lp-eyebrow" style="margin-top:2.5rem;">PoC · Demo</p>
@@ -82,12 +84,17 @@ author_profile: false
     var params = new URLSearchParams(location.search);
     if (params.get('type')) document.getElementById('contact-type').value = params.get('type');
 
+    var status = document.getElementById('contact-status');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var f = form.elements;
-      var subject = '[' + f.type.value + '] ' + (f.org.value ? f.org.value + ' — ' : '') + f.name.value;
-      var body = '이름: ' + f.name.value + '\n회사·소속: ' + f.org.value + '\n이메일: ' + f.email.value + '\n문의 유형: ' + f.type.value + '\n\n' + f.message.value;
-      location.href = 'mailto:contact@parameterfreak.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      f._subject.value = '[' + f.type.value + '] ' + (f.org.value ? f.org.value + ' — ' : '') + f.name.value;
+      var btn = form.querySelector('button[type=submit]');
+      btn.disabled = true;
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+        .then(function (r) { if (!r.ok) throw r; form.reset(); status.textContent = '접수되었습니다. 보통 1~2 영업일 안에 답변드립니다.'; })
+        .catch(function () { status.textContent = '전송에 실패했습니다. contact@parameterfreak.com으로 직접 보내주세요.'; })
+        .then(function () { btn.disabled = false; });
     });
   })();
 </script>
