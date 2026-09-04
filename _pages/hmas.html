@@ -2,9 +2,9 @@
 layout: splash
 title: "H-MAS — 온프레미스 AI 서빙 플랫폼"
 permalink: /hmas/
-excerpt: "흩어진 GPU 서버를 하나로 묶어, AI 모델을 최적의 하드웨어에 자동 배치하는 온프레미스 AI 서빙 플랫폼"
-description: "H-MAS는 흩어진 GPU 서버를 하나의 컨트롤 플레인으로 묶어 AI 모델을 최적의 하드웨어에 자동 배치하는 온프레미스 AI 서빙 플랫폼입니다. 모델 서빙, 통합 추론(인퍼런스) API, GPU 클러스터 관리, 멀티 클러스터 스케줄링, 실시간 모니터링, 자동 장애 복구를 제공합니다."
-keywords: "H-MAS, AI 서빙 플랫폼, 모델 서빙, model serving, AI 추론, 인퍼런스, inference, LLM 서빙, GPU 관리, GPU 클러스터, GPU 스케줄링, GPU 활용률, 온프레미스 AI, on-premise LLM, 멀티 클러스터 AI 인프라"
+excerpt: "흩어진 GPU 서버를 하나로 묶어, AI 모델을 알맞은 하드웨어에 자동 배치하는 온프레미스 AI 서빙 플랫폼"
+description: "H-MAS는 흩어진 GPU 서버를 하나의 컨트롤 플레인으로 묶어 AI 모델을 알맞은 하드웨어에 자동 배치하는 온프레미스 AI 서빙 플랫폼입니다. 직접 만들고 있는 프로젝트로, 모델 서빙, OpenAI 호환 추론 API, 멀티 클러스터 스케줄링, 실시간 모니터링, 자동 장애 복구를 제공합니다."
+keywords: "H-MAS, AI 서빙 플랫폼, 온프레미스 LLM 서빙, GPU 클러스터, 멀티 클러스터, MLOps"
 header:
   og_image: portfolio/hmas/v0.7/02-dashboard.png
 ---
@@ -22,14 +22,14 @@ header:
   <section class="lp-section lp-hero lp-hero--center">
     <div class="lp-wrap">
       <p class="lp-hero__eyebrow">H-MAS · Hardware-aware Multi-Cluster AI Serving Platform</p>
-      <h1 class="lp-hero__title"><span class="lp-line">흩어진 GPU 서버를 하나로 묶어,</span> <span class="lp-line">AI 모델을 <u>최적의 하드웨어에</u> 자동 배치</span></h1>
+      <h1 class="lp-hero__title"><span class="lp-line">흩어진 GPU 서버를 하나로 묶어,</span> <span class="lp-line">AI 모델을 <u>알맞은 하드웨어에</u> 자동 배치</span></h1>
       <p class="lp-hero__lead">
-        클라우드 없이도 AI를 가장 효율적으로 서빙하는 온프레미스 플랫폼.
-        복잡한 설정 없이, 웹 콘솔에서 모델을 선택하면 끝납니다.
+        남는 GPU 서버 몇 대를 하나로 묶어 쓰려고 만들고 있는 온프레미스 서빙 플랫폼입니다.
+        웹 콘솔에서 모델을 고르면 알맞은 클러스터에 배포됩니다.
       </p>
       <div class="lp-cta">
-        <a class="lp-btn lp-btn--primary" href="{{ base_path }}/products/h-mas/">자세한 제품 문서 →</a>
-        <a class="lp-btn lp-btn--ghost" href="{{ base_path }}/contact/?type=PoC·데모">PoC·데모 문의</a>
+        <a class="lp-btn lp-btn--primary" href="{{ base_path }}/products/h-mas/">자세한 문서 →</a>
+        <a class="lp-btn lp-btn--ghost" href="{{ base_path }}/changelog/">개발 노트</a>
       </div>
       <div class="lp-shot" style="max-width:960px;margin:3rem auto 0;">
         <img src="{{ base_path }}/images/portfolio/hmas/v0.7/02-dashboard.png" alt="H-MAS 통합 대시보드" width="1600" height="900"/>
@@ -37,39 +37,29 @@ header:
     </div>
   </section>
 
-  <!-- ===================== 문제 ===================== -->
+  <!-- ===================== 왜 ===================== -->
   <section class="lp-section">
     <div class="lp-wrap">
-      <p class="lp-eyebrow">Problem</p>
-      <h2 class="lp-h2">"배보다 배꼽이 큰" 서빙 비용</h2>
-      <p class="lp-sub">AI가 '구축'에서 '서비스'로 넘어가며, 서빙 비용이 새로운 병목이 됐습니다.</p>
-      <div class="lp-stats lp-stats--3">
-        <div class="lp-stat">
-          <div class="lp-stat__num">80~90%</div>
-          <p class="lp-card__body">AI 시스템 생애주기 비용이 학습이 아니라 <b>서빙</b>에서 발생 — 학습은 한 번, 서빙은 365일 24시간 돌아갑니다. <span style="opacity:.7;">(Stanford AI Index 2025)</span></p>
-        </div>
-        <div class="lp-stat">
-          <div class="lp-stat__num">4만 원↑</div>
-          <p class="lp-card__body">시간당 클라우드 GPU 단가. 서비스를 키울수록 서빙 인프라 비용이 서비스 자체보다 커집니다. 금융·공공은 보안 규정상 클라우드도 불가 → <b>자체 GPU 강제</b>.</p>
-        </div>
-        <div class="lp-stat">
-          <div class="lp-stat__num">25%</div>
-          <p class="lp-card__body">GPU 활용률. 자기 GPU를 사도 제대로 쓸 SW가 없습니다. 기본 K8s는 GPU 물리 구조(NVLink/PCIe/NUMA)를 몰라 병목이 생기고, <b>비싼 GPU의 3/4이 놀고 있습니다</b>.</p>
-        </div>
+      <p class="lp-eyebrow">Why</p>
+      <h2 class="lp-h2">왜 만들기 시작했나</h2>
+      <p class="lp-sub">GPU 서버가 몇 대 있는데 각각 따로 놀고 있었습니다.</p>
+      <div style="max-width:720px;">
+        <p class="lp-card__body">모델 하나 띄우려면 서버에 들어가 yaml을 만지고, 어느 서버가 비어 있는지는 직접 <code>nvidia-smi</code>를 쳐봐야 알고, 안 쓰는 모델이 GPU를 며칠씩 잡고 있어도 아무도 모릅니다. 기본 Kubernetes는 GPU가 NVLink로 묶였는지 PCIe로 묶였는지 모르니 배치도 그냥 빈 곳에 됩니다.</p>
+        <p class="lp-card__body">vanilla Kubernetes에 vLLM을 직접 올리는 것과 비교해 본 기록은 <a href="{{ base_path }}/posts/2026/07/k8s-vllm-vs-hmas/">이 글</a>에 있습니다. 그 글에서 겪은 번거로움이 이 프로젝트의 출발점입니다.</p>
       </div>
       <div class="lp-quote">
         "웹 화면에서 모델을 띄우고, GPU 점유율을 보고, 미사용 모델은 자동 해제하고, 장애 나면 알림 받고 싶다."
-        <span class="lp-quote__src">— GPU 10~20대 보유 기업들의 반복 문의. 수요는 이미 현장에서 들어오고 있습니다.</span>
+        <span class="lp-quote__src">— 처음에 적어둔 한 줄 목표. 아직도 이 문장 기준으로 만듭니다.</span>
       </div>
     </div>
   </section>
 
-  <!-- ===================== 솔루션 ===================== -->
+  <!-- ===================== 구조 ===================== -->
   <section class="lp-section lp-section--soft">
     <div class="lp-wrap">
-      <p class="lp-eyebrow">Solution</p>
-      <h2 class="lp-h2">GPU를 묶고, 자동 배치하는 서빙 인프라</h2>
-      <p class="lp-sub">흩어진 GPU 서버를 하나의 컨트롤 플레인으로 묶고, 모델을 최적의 하드웨어에 자동 배치합니다.</p>
+      <p class="lp-eyebrow">How</p>
+      <h2 class="lp-h2">GPU를 묶고, 자동 배치하는 구조</h2>
+      <p class="lp-sub">흩어진 GPU 서버를 하나의 컨트롤 플레인으로 묶고, 모델을 알맞은 하드웨어에 자동 배치합니다.</p>
       <div class="lp-split">
         <figure class="lp-figure">
           <img src="{{ base_path }}/images/portfolio/hmas/pitch/architecture.png" alt="H-MAS 시스템 아키텍처"/>
@@ -80,7 +70,7 @@ header:
           <div class="lp-vitem"><b>자동 배치</b><span>모델 크기별 고성능(HP)/가성비(GP) 클러스터로 트래픽 자동 분배</span></div>
           <div class="lp-vitem"><b>하드웨어 인지 <span class="lp-tag">v0.9 로드맵</span></b><span>NVLink/PCIe/NUMA 토폴로지 인식, 통신 병목 최소화</span></div>
           <div class="lp-vitem"><b>고가용성</b><span>장애 시 다른 클러스터로 자동 Failover</span></div>
-          <div class="lp-vitem lp-vitem--accent"><b>활용률 극대화</b><span>GPU 활용률 25% → 90%+ 목표</span></div>
+          <div class="lp-vitem lp-vitem--accent"><b>인프라 레이어</b><span>vLLM 같은 추론 엔진을 대체하는 게 아니라 그 위에서 동작</span></div>
         </div>
       </div>
     </div>
@@ -89,9 +79,9 @@ header:
   <!-- ===================== 동작 ===================== -->
   <section class="lp-section">
     <div class="lp-wrap">
-      <p class="lp-eyebrow">How it works</p>
+      <p class="lp-eyebrow">Console</p>
       <h2 class="lp-h2">웹 콘솔에서 모델만 고르면 끝</h2>
-      <p class="lp-sub">관리자는 선택만, 나머지는 H-MAS가 자동으로 처리합니다.</p>
+      <p class="lp-sub">사람은 선택만, 나머지는 H-MAS가 처리합니다.</p>
       <div class="lp-steps">
         <div class="lp-step"><span class="lp-step__n">1</span><span class="lp-step__t">모델 선택</span></div>
         <div class="lp-step"><span class="lp-step__n">2</span><span class="lp-step__t">정책 자동 추천</span></div>
@@ -106,124 +96,58 @@ header:
     </div>
   </section>
 
-  <!-- ===================== 차별점 ===================== -->
+  <!-- ===================== 현재 상태 ===================== -->
   <section class="lp-section lp-section--soft">
     <div class="lp-wrap">
-      <p class="lp-eyebrow">Why us</p>
-      <h2 class="lp-h2">서빙 전용 + 온프레미스 + 토폴로지 인지</h2>
-      <p class="lp-sub">서빙 인프라가 갖춰야 할 네 가지를 H-MAS가 모두 충족합니다.</p>
-      <div class="lp-cards lp-cards--4">
+      <p class="lp-eyebrow">Status</p>
+      <h2 class="lp-h2">지금 되는 것, 아직 안 되는 것</h2>
+      <p class="lp-sub">v0.7 기준입니다. 주간 진행 상황은 <a href="{{ base_path }}/changelog/">개발 노트</a>에 남깁니다.</p>
+      <div class="lp-cards lp-cards--2">
         <div class="lp-card">
-          <h3 class="lp-card__title">서빙 전용</h3>
-          <p class="lp-card__body">학습이 아닌 서빙에 최적화된 설계.</p>
-        </div>
-        <div class="lp-card">
-          <h3 class="lp-card__title">온프레미스</h3>
-          <p class="lp-card__body">클라우드를 못 쓰는 금융·공공·제조 환경에 그대로 설치.</p>
-        </div>
-        <div class="lp-card">
-          <h3 class="lp-card__title">토폴로지 인지 <span class="lp-tag">v0.9 로드맵</span></h3>
-          <p class="lp-card__body">GPU 연결 구조를 인식해 통신 병목을 최소화하고 성능을 끌어올립니다.</p>
-        </div>
-        <div class="lp-card">
-          <h3 class="lp-card__title">멀티 클러스터</h3>
-          <p class="lp-card__body">흩어진 GPU 서버를 하나의 컨트롤 플레인으로 통합.</p>
-        </div>
-      </div>
-      <p class="lp-note" style="text-align:center;">
-        GPU 3~20대를 보유한 중소·스타트업·연구소를 위한 가볍고 빠른 도입.
-        기존 추론 엔진(vLLM 등) 위에서 동작하는 <b>인프라 관리 레이어</b>입니다.
-      </p>
-    </div>
-  </section>
-
-  <!-- ===================== 트랙션 ===================== -->
-  <section class="lp-section">
-    <div class="lp-wrap">
-      <p class="lp-eyebrow">Reliability</p>
-      <h2 class="lp-h2">바로 도입할 수 있는 검증된 제품</h2>
-      <p class="lp-sub">컨셉이 아니라, 모델 등록부터 서빙·모니터링까지 실제로 동작하는 제품입니다.</p>
-      <div style="max-width:720px;">
-        <div>
+          <h3 class="lp-card__title">되는 것</h3>
           <ul class="lp-check">
-            <li><b>검증된 배포 파이프라인</b> — 모델 등록 → 배포 → API 호출까지 멀티 클러스터에서 안정 동작</li>
-            <li><b>통합 추론 API</b> — 모든 모델을 하나의 OpenAI 호환 엔드포인트로 호출</li>
-            <li><b>실시간 모니터링</b> — Prometheus 기반 TPS·지연시간·GPU 메트릭 제공</li>
-            <li><b>운영 안정성</b> — 이미지 사전 캐싱으로 재배포 시간 단축, 장애 자동 감지</li>
-            <li><b>라이트·다크 모드</b> — 운영 환경에 맞는 웹 콘솔 테마</li>
-            <li><b>지식재산권 확보</b> — 컴퓨터프로그램 저작권 등록 (한국저작권위원회 C-2026-020641)</li>
+            <li>모델 등록 → 배포 → API 호출까지 멀티 클러스터에서 동작</li>
+            <li>모든 모델을 하나의 OpenAI 호환 엔드포인트로 호출</li>
+            <li>vLLM 등 5종 이상의 서빙 런타임</li>
+            <li>Prometheus 기반 TPS·지연시간·GPU 메트릭, Pod 로그</li>
+            <li>이미지 사전 캐싱, 장애 자동 감지, 클러스터 간 Failover</li>
+            <li>조직·권한 체계, 관리자 콘솔, 라이트·다크 모드</li>
           </ul>
-          <div class="lp-stats lp-stats--2" style="margin-top:1.75rem;">
-            <div class="lp-stat"><div class="lp-stat__num">5종+</div><div class="lp-stat__label">지원 서빙 런타임</div></div>
-            <div class="lp-stat"><div class="lp-stat__num">OpenAI</div><div class="lp-stat__label">호환 통합 추론 API</div></div>
-          </div>
+        </div>
+        <div class="lp-card">
+          <h3 class="lp-card__title">아직 안 되는 것</h3>
+          <ul class="lp-check">
+            <li>NVLink/PCIe/NUMA 토폴로지를 보고 배치하는 것. v0.9 목표입니다.</li>
+            <li>다른 환경에서의 검증. 지금까지는 제 클러스터에서만 돌려봤습니다.</li>
+            <li>소스 공개. 비공개로 진행하고, 과정은 개발 노트로 남깁니다.</li>
+          </ul>
         </div>
       </div>
       <div class="lp-pair" style="margin-top:2.5rem;">
         <figure class="lp-figure"><img src="{{ base_path }}/images/portfolio/hmas/v0.7/02-dashboard.png" alt="대시보드 라이트 모드"/><figcaption>라이트 모드</figcaption></figure>
         <figure class="lp-figure"><img src="{{ base_path }}/images/portfolio/hmas/v0.7/02-dashboard-dark.png" alt="대시보드 다크 모드"/><figcaption>다크 모드</figcaption></figure>
       </div>
-      <div class="lp-quote">보유하신 GPU 환경에 맞춰 PoC·데모를 도와드립니다. 실제 동작을 직접 확인해 보세요.</div>
     </div>
   </section>
 
-  <!-- ===================== 시장 ===================== -->
-  <section class="lp-section lp-section--soft">
-    <div class="lp-wrap">
-      <p class="lp-eyebrow">Who it's for</p>
-      <h2 class="lp-h2">이런 분들께 H-MAS가 필요합니다</h2>
-      <p class="lp-sub">AI 비용의 대부분은 학습이 아니라 서빙에서 발생합니다. 자체 GPU를 두고도 제대로 활용하지 못하고 있다면.</p>
-      <div class="lp-cards">
-        <div class="lp-card">
-          <h3 class="lp-card__title">자체 GPU를 보유한 기업</h3>
-          <p class="lp-card__body">GPU 서버 3~20대를 두고 있지만 개별 운영되어 활용률이 낮은 AI 스타트업·중소기업.</p>
-        </div>
-        <div class="lp-card">
-          <h3 class="lp-card__title">클라우드를 못 쓰는 환경</h3>
-          <p class="lp-card__body">보안 규정상 클라우드 사용이 불가해 자체 GPU + 온프레미스 서빙이 필요한 금융·공공·제조.</p>
-        </div>
-        <div class="lp-card">
-          <h3 class="lp-card__title">이기종 GPU 연구 조직</h3>
-          <p class="lp-card__body">A100·RTX 등 여러 종류의 GPU를 묶어 모델별로 효율적으로 서빙하고 싶은 연구소·대학.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== 도입 방식 ===================== -->
+  <!-- ===================== 어떤 환경 ===================== -->
   <section class="lp-section">
     <div class="lp-wrap">
-      <p class="lp-eyebrow">Deployment</p>
-      <h2 class="lp-h2">보유하신 환경에 직접 설치합니다</h2>
-      <p class="lp-sub">기존에 운영 중인 Kubernetes 환경 위에 온프레미스로 설치합니다. 데이터와 모델은 모두 고객 인프라 안에 머뭅니다.</p>
-      <div class="lp-cards">
-        <div class="lp-card">
-          <h3 class="lp-card__title">온프레미스 구축형</h3>
-          <p class="lp-card__body">고객사 GPU 인프라에 직접 설치·운영. 외부로 데이터가 나가지 않아 보안 규정이 엄격한 환경에도 적합합니다.</p>
-        </div>
-        <div class="lp-card">
-          <h3 class="lp-card__title">합리적인 운영 비용</h3>
-          <p class="lp-card__body">이미 보유한 자체 GPU를 효율적으로 활용해, 시간당 과금되는 클라우드 GPU 대비 운영 비용 부담을 낮춥니다.</p>
-        </div>
-        <div class="lp-card">
-          <h3 class="lp-card__title">PoC부터 시작</h3>
-          <p class="lp-card__body">보유하신 GPU 환경에 맞춰 PoC·데모를 먼저 진행합니다. 도입 규모와 조건은 환경에 맞춰 협의해 드립니다.</p>
-        </div>
-      </div>
+      <p class="lp-eyebrow">Fit</p>
+      <h2 class="lp-h2">이런 환경을 생각하고 만듭니다</h2>
+      <p class="lp-sub">GPU 서버가 몇 대에서 수십 대, 클라우드는 쓰기 어렵고, 서빙만 보는 사람은 따로 없는 곳. 기존 Kubernetes 위에 설치하고, 데이터와 모델은 그 안에 머뭅니다.</p>
     </div>
   </section>
 
-  <!-- ===================== 비전 / CTA ===================== -->
+  <!-- ===================== CTA ===================== -->
   <section class="lp-section lp-final">
     <div class="lp-wrap">
-      <p class="lp-eyebrow">Vision</p>
-      <h2 class="lp-h2">클라우드 없이도, AI를 가장 효율적으로</h2>
-      <p class="lp-sub">자체 GPU를 가진 모든 조직이 가장 효율적으로 AI를 서빙하는 표준을 만듭니다.<br/>보유하신 GPU 환경에 맞춰 <span class="lp-nowrap">PoC·데모를 도와드립니다.</span></p>
+      <h2 class="lp-h2">써보고 싶다면</h2>
+      <p class="lp-sub">아직 제 환경에서만 돌고 있어서, 다른 환경에서 써보고 싶은 분이 있으면 메일 주세요.<br/>설치를 같이 해보는 정도는 언제든 환영입니다.</p>
       <div class="lp-cta">
-        <a class="lp-btn lp-btn--line" href="{{ base_path }}/products/h-mas/">자세한 제품 문서 보기</a>
-        <a class="lp-btn lp-btn--solid" href="{{ base_path }}/contact/?type=PoC·데모">PoC·데모 문의하기</a>
+        <a class="lp-btn lp-btn--line" href="{{ base_path }}/products/h-mas/">자세한 문서 보기</a>
+        <a class="lp-btn lp-btn--solid" href="mailto:contact@parameterfreak.com">contact@parameterfreak.com</a>
       </div>
-      <p class="lp-note">또는 이메일로 문의: <a href="mailto:contact@parameterfreak.com">contact@parameterfreak.com</a></p>
     </div>
   </section>
 
