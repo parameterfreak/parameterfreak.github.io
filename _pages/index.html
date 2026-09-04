@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 title: "parameterfreak — AI 시스템을 설계하고 만듭니다"
-description: "온프레미스 AI 서빙 플랫폼 H-MAS, 임베딩·이상탐지 연구, 그리고 이를 제품으로 만드는 AI 소프트웨어. parameterfreak은 AI 시스템을 직접 설계하고 만듭니다."
+description: "온프레미스 AI 서빙 플랫폼 H-MAS를 만들고, 임베딩·이상탐지를 연구하고, 그 과정을 기록합니다. parameterfreak의 프로젝트와 블로그."
 author_profile: false
 redirect_from:
   - /about/
@@ -23,14 +23,14 @@ redirect_from:
     <div class="lp-wrap">
       <div class="lp-hero__grid">
         <div>
-          <h1 class="lp-hero__title">AI 시스템을<br/>설계하고, <u>만듭니다.</u></h1>
+          <h1 class="lp-hero__title">AI 시스템을<br/>직접 설계하고, <u>만들고 있습니다.</u></h1>
           <p class="lp-hero__lead">
-            GPU를 묶어 AI를 서빙하는 플랫폼, 임베딩·이상탐지 연구,
-            그리고 그 기술을 담은 AI 소프트웨어까지. 탐구에 그치지 않고 실제 동작하는 제품으로 만듭니다.
+            남는 GPU를 묶어 모델을 서빙하는 플랫폼 H-MAS를 만들고 있고,
+            그 위에 올릴 소프트웨어와 임베딩·이상탐지 연구를 같이 하고 있습니다. 만들면서 배운 것은 블로그와 개발 노트에 남깁니다.
           </p>
           <div class="lp-cta">
             <a class="lp-btn lp-btn--primary" href="{{ base_path }}/hmas/">H-MAS 알아보기</a>
-            <a class="lp-btn lp-btn--ghost" href="{{ base_path }}/products/">제품 전체</a>
+            <a class="lp-btn lp-btn--ghost" href="{{ base_path }}/products/">프로젝트 전체</a>
           </div>
         </div>
         <div class="lp-shot">
@@ -43,23 +43,23 @@ redirect_from:
   <!-- ===================== WHAT WE DO ===================== -->
   <section class="lp-section">
     <div class="lp-wrap">
-      <p class="lp-eyebrow">What we do</p>
-      <h2 class="lp-h2">세 가지 축</h2>
-      <p class="lp-sub">서빙 플랫폼을 만들고, 그 위에 소프트웨어를 올리고, 이를 뒷받침하는 기술을 연구합니다.</p>
+      <p class="lp-eyebrow">Now</p>
+      <h2 class="lp-h2">요즘 만드는 것</h2>
+      <p class="lp-sub">서빙 플랫폼이 중심이고, 그 위에 올릴 소프트웨어와 이를 뒷받침할 연구를 같이 굴리고 있습니다.</p>
       <div class="lp-cards">
         <a class="lp-card" href="{{ base_path }}/hmas/">
           <h3 class="lp-card__title">AI 서빙 플랫폼</h3>
-          <p class="lp-card__body">흩어진 GPU 서버를 하나로 묶어 모델을 최적의 하드웨어에 자동 배치하는 온프레미스 서빙 플랫폼 H-MAS. 멀티 클러스터 스케줄링, 통합 추론 API, GPU 활용률 최적화.</p>
+          <p class="lp-card__body">흩어진 GPU 서버를 하나로 묶어 모델을 알맞은 하드웨어에 자동 배치하는 온프레미스 서빙 플랫폼. 지금 가장 시간을 많이 쓰고 있는 프로젝트입니다.</p>
           <span class="lp-card__more">H-MAS 보기 →</span>
         </a>
         <a class="lp-card" href="{{ base_path }}/products/">
           <h3 class="lp-card__title">AI 소프트웨어</h3>
-          <p class="lp-card__body">플랫폼 위에 올리는 응용 소프트웨어. AI 문서 생성 PaperOps, RAG 데이터셋 버전 관리 DataProc, MCP 도구 등.</p>
-          <span class="lp-card__more">제품 보기 →</span>
+          <p class="lp-card__body">플랫폼 위에 올려 쓰려고 만드는 것들. AI 문서 생성 PaperOps, RAG 데이터셋 버전 관리 DataProc, MCP 도구 등.</p>
+          <span class="lp-card__more">프로젝트 보기 →</span>
         </a>
         <a class="lp-card" href="{{ base_path }}/changelog/#lexem">
           <h3 class="lp-card__title">AI 연구</h3>
-          <p class="lp-card__body">시계열·로그 이상탐지 제품을 준비하며, 도메인 특화 임베딩과 검색·RAG 아키텍처를 함께 개발합니다. 진행 상황은 노트로 공개합니다.</p>
+          <p class="lp-card__body">다음 프로젝트로 시계열·로그 이상탐지를 준비하면서 도메인 특화 임베딩과 검색·RAG 구조를 파고 있습니다. 진행 상황은 개발 노트에 남깁니다.</p>
           <span class="lp-card__more">연구 노트 보기 →</span>
         </a>
       </div>
@@ -70,7 +70,7 @@ redirect_from:
   <section class="lp-section lp-section--soft">
     <div class="lp-wrap">
       <p class="lp-eyebrow">Changelog</p>
-      <h2 class="lp-h2">최근 변경</h2>
+      <h2 class="lp-h2">최근 개발 노트</h2>
       {% assign notes = site.changelog | sort: "date" | reverse %}
       {% for post in notes limit: 4 %}
         <a class="lp-post" href="{{ base_path }}{{ post.url }}">
@@ -108,8 +108,8 @@ redirect_from:
   <!-- ===================== CONTACT ===================== -->
   <section class="lp-section lp-final">
     <div class="lp-wrap">
-      <h2 class="lp-h2">함께 이야기해요</h2>
-      <p class="lp-sub">제품 도입, 연구 협업, 무엇이든 편하게 연락 주세요.</p>
+      <h2 class="lp-h2">궁금한 게 있다면</h2>
+      <p class="lp-sub">H-MAS를 써보고 싶거나, 글에 대해 이야기하고 싶거나, 무엇이든 편하게 메일 주세요.</p>
       <div class="lp-cta">
         <a class="lp-btn lp-btn--solid" href="{{ base_path }}/contact/">문의하기 →</a>
         <a class="lp-btn lp-btn--line" href="mailto:contact@parameterfreak.com">contact@parameterfreak.com</a>
