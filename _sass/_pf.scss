@@ -105,7 +105,7 @@ a { color: var(--pf-blue); }
 @media (max-width: 600px) {
   .pf-nav__wrap { height: 56px; padding: 0 1rem; }
   .pf-nav__links { gap: 1rem; font-size: 0.82rem; }
-  .pf-nav__cta { display: none; }
+  .pf-nav__cta, .pf-nav__contact { display: none; }
 }
 
 /* ---- footer ---------------------------------------------------------- */

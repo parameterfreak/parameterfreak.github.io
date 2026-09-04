@@ -7,7 +7,7 @@
       {% for link in site.data.navigation.main %}
         <a href="{{ base_path }}{{ link.url }}"{% if page.url contains link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
       {% endfor %}
-      <a href="{{ base_path }}/contact/"{% if page.url contains "/contact/" %} aria-current="page"{% endif %}>Contact</a>
+      <a class="pf-nav__contact" href="{{ base_path }}/contact/"{% if page.url contains "/contact/" %} aria-current="page"{% endif %}>Contact</a>
     </nav>
   </div>
 </header>
