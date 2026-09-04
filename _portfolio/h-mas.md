@@ -10,7 +10,7 @@ header:
   teaser: portfolio/hmas/v0.7/02-dashboard.png
 ---
 
-## 제품 개요
+## 프로젝트 개요
 
 H-MAS는 온프레미스 환경에 분산된 GPU 서버들을 하나의 플랫폼에서 통합 관리하고, AI 모델을 최적의 하드웨어에 자동 배치하는 **AI 서빙 플랫폼**입니다.
 
@@ -542,7 +542,7 @@ v0.7에서는 JWT 기반 로그인 인증에 더해 RBAC(역할 기반 접근 �
 
 | 항목 | 내용 |
 |------|------|
-| **제품명** | H-MAS (Hardware-aware Multi-Cluster AI Serving Platform) |
+| **프로젝트명** | H-MAS (Hardware-aware Multi-Cluster AI Serving Platform) |
 | **분류** | 온프레미스 AI 서빙 플랫폼 |
 | **핵심 가치** | GPU 활용률 극대화, 멀티 클러스터 통합 관리, 하드웨어 인지 최적 배치 |
 | **대상** | GPU 인프라를 보유한 스타트업, 연구소, 대학 연구실, 중소기업 |
