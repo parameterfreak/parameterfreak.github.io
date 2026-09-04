@@ -23,7 +23,7 @@ main:
   #- title: "About"
   #  url: /about/
 
-  - title: "Products"
+  - title: "Projects"
     url: /products/
 
   - title: "Changelog"
