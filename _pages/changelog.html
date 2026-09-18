@@ -24,14 +24,22 @@ author_profile: false
       <p class="lp-hero__lead">
         H-MAS·PaperOps·DataProc 개발과 LexEM 연구 — 매주 무엇을 하고 무엇이 바뀌었는지 기록합니다.
       </p>
+      {% assign notes = site.changelog | sort: "date" | reverse %}
+      {% assign products = "H-MAS,LexEM,PaperOps,DataProc,DART-MCP" | split: "," %}
+      <nav class="lp-index" aria-label="제품별 바로가기">
+        {% for product in products %}
+          {% assign items = notes | where_exp: "n", "n.categories.first == product" %}
+          {% if items.size > 0 %}
+            <a href="#{{ product | slugify }}">{{ product }} <span>{{ items.size }}</span></a>
+          {% endif %}
+        {% endfor %}
+      </nav>
     </div>
   </section>
 
   <!-- ===================== 제품별 목록 ===================== -->
   <section class="lp-section lp-section--soft">
     <div class="lp-wrap">
-      {% assign notes = site.changelog | sort: "date" | reverse %}
-      {% assign products = "H-MAS,LexEM,PaperOps,DataProc,DART-MCP" | split: "," %}
       {% for product in products %}
         {% assign items = notes | where_exp: "n", "n.categories.first == product" %}
         {% if items.size > 0 %}

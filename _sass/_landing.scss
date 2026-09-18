@@ -386,6 +386,27 @@
 }
 
 /* ---- listing rows (blog / changelog) ------------------------------------ */
+.lp-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.6rem;
+  margin-top: 1.5rem;
+  a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid var(--pf-line);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--pf-ink);
+    text-decoration: none;
+    transition: border-color 0.12s ease, color 0.12s ease;
+    &:hover { border-color: var(--pf-blue); color: var(--pf-blue); }
+    span { font-family: $pf-mono; font-size: 0.75rem; color: var(--pf-mute); }
+  }
+}
 .lp-year {
   font-family: $pf-display;
   font-size: 1.25rem;
