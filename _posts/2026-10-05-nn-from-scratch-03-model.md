@@ -204,14 +204,16 @@ ReLU().forward(np.array([-2, -0.5, 0., 0.5, 2.]))    # [0. 0. 0. 0.5 2.]
 
 **양수는 그대로, 음수는 0.** 그래프로 그리면 꺾인 직선입니다.
 
-```
-      출력
-       │      ╱
-       │    ╱
-       │  ╱
-  ─────┼╱──────── 입력
-  0 0 0│
-```
+<svg viewBox="0 0 360 220" width="360" style="max-width:100%;display:block;margin:1em auto;font-family:sans-serif;font-size:13px" role="img" aria-label="ReLU 그래프: 입력이 음수면 출력 0, 양수면 입력 그대로">
+  <line x1="30" y1="160" x2="340" y2="160" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="180" y1="20" x2="180" y2="200" stroke="currentColor" stroke-width="1.5"/>
+  <polyline points="40,160 180,160 310,30" fill="none" stroke="#2563eb" stroke-width="3" stroke-linejoin="round"/>
+  <text x="330" y="178" text-anchor="end" fill="currentColor">입력</text>
+  <text x="188" y="18" fill="currentColor">출력</text>
+  <text x="172" y="178" text-anchor="end" fill="currentColor">0</text>
+  <text x="100" y="150" text-anchor="middle" fill="currentColor" opacity="0.7">음수 → 0</text>
+  <text x="300" y="75" text-anchor="end" fill="currentColor" opacity="0.7">양수 → 그대로</text>
+</svg>
 
 ### 솔직하게: 지금 ReLU가 하는 일은 "의미 없는 점수 중 양수만 남기기"
 
