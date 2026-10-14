@@ -38,6 +38,10 @@ layout: default
       </p>
     {% endif %}
 
+    {% if page.collection == "posts" %}
+      <p class="art__cta">비슷한 작업이 필요하시면 편하게 문의해 주세요. <a href="{{ base_path }}/contact/">작업 문의하기 →</a></p>
+    {% endif %}
+
     {% if page.previous or page.next %}
       <nav class="art__pager">
         {% if page.previous %}

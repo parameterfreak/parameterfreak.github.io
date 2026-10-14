@@ -91,7 +91,7 @@ a { color: var(--pf-blue); }
   gap: 1.6rem;
   font-size: 0.9rem;
   font-weight: 500;
-  a { color: var(--pf-grey); text-decoration: none; }
+  a { color: var(--pf-grey); text-decoration: none; white-space: nowrap; }
   a:hover, a[aria-current="page"] { color: var(--pf-ink); }
 }
 .pf-nav__cta {
@@ -104,8 +104,8 @@ a { color: var(--pf-blue); }
 }
 @media (max-width: 600px) {
   .pf-nav__wrap { height: 56px; padding: 0 1rem; }
-  .pf-nav__links { gap: 1rem; font-size: 0.82rem; }
-  .pf-nav__cta, .pf-nav__contact { display: none; }
+  .pf-nav__links { gap: 0.85rem; font-size: 0.82rem; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  .pf-nav__cta, .pf-nav__desktop { display: none; }
 }
 
 /* ---- footer ---------------------------------------------------------- */
@@ -257,6 +257,15 @@ a { color: var(--pf-blue); }
     text-decoration: none;
     &:hover { border-color: var(--pf-ink); color: var(--pf-ink); }
   }
+}
+.art__cta {
+  margin: 2.5rem 0 0;
+  padding: 1rem 1.25rem;
+  background: var(--pf-soft);
+  border-radius: 10px;
+  font-size: 0.92rem;
+  color: var(--pf-grey);
+  a { color: var(--pf-blue); font-weight: 500; text-decoration: none; white-space: nowrap; }
 }
 .art__pager {
   display: grid;

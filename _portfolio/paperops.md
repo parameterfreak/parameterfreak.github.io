@@ -1,6 +1,6 @@
 ---
 title: "PaperOps"
-excerpt: "AI기반의 문서 생성 관리"
+excerpt: "RAG 검색과 여러 LLM을 붙여 연구 자료를 분석하고 전문 문서를 작성하는 AI 문서 플랫폼"
 collection: portfolio
 redirect_from:
   - /solution/paperops/

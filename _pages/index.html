@@ -1,8 +1,8 @@
 ---
 layout: splash
 permalink: /
-title: "parameterfreak — AI를 연구하고 만듭니다"
-description: "AI 시스템을 설계하고 만듭니다. 도메인 특화 임베딩과 시계열 데이터 연구, 문서 생성·데이터 도구, 그리고 AI 서빙 플랫폼 H-MAS를 만들며 그 과정을 기록합니다."
+title: "인프라에서 모델까지, AI 시스템을 만드는 개발자"
+description: "서버·클라우드 인프라부터 모델 학습, 시계열 데이터 분석, 자연어 처리까지. 지금은 LLM 서빙 플랫폼 H-MAS를 만들고 있습니다. 개발 작업 의뢰도 받습니다."
 author_profile: false
 redirect_from:
   - /about/
@@ -19,45 +19,30 @@ redirect_from:
 <div class="lp">
   <!-- ===================== HERO ===================== -->
   <section class="lp-section lp-hero">
-    <div class="lp-wrap">
-      <h1 class="lp-hero__title">AI를 연구하고, <u>만들고 있습니다.</u></h1>
-      <p class="lp-hero__lead">
-        도메인 특화 임베딩과 시계열 데이터를 연구하고, 직접 쓰는 도구를 만듭니다.
-        제품으로는 AI 서빙 플랫폼 <span class="lp-nowrap">H-MAS</span>를 만들고 있습니다.
-      </p>
-      <div class="lp-cta">
-        <a class="lp-btn lp-btn--primary" href="{{ base_path }}/posts/">글 보기</a>
-        <a class="lp-btn lp-btn--ghost" href="{{ base_path }}/products/">프로젝트 보기</a>
+    <div class="lp-wrap lp-hero__grid">
+      <div>
+        <h1 class="lp-hero__title lp-hero__title--calm">인프라에서 모델까지,<br/>AI 시스템을 만드는 개발자</h1>
+        <p class="lp-hero__lead">
+          서버와 Kubernetes 인프라를 구성하고, 모델을 학습시키고, 시계열과 자연어 데이터를 분석합니다.
+          지금은 GPU 서버에서 LLM을 서빙하는 플랫폼 <span class="lp-nowrap">H-MAS</span>를 만들고 있습니다.
+        </p>
+        <div class="lp-cta">
+          <a class="lp-btn lp-btn--primary" href="{{ base_path }}/contact/">작업 문의하기</a>
+          <a class="lp-btn lp-btn--ghost" href="{{ base_path }}/products/">프로젝트 보기</a>
+        </div>
       </div>
+      <a class="lp-hero__img" href="{{ base_path }}/hmas/" aria-label="H-MAS 소개 보기">
+        <img src="{{ base_path }}/images/portfolio/hmas/v0.7/02-dashboard.png" alt="H-MAS 대시보드 화면" width="1600" height="900"/>
+      </a>
     </div>
   </section>
 
-  <!-- ===================== BLOG ===================== -->
+  <!-- ===================== PROJECTS ===================== -->
   <section class="lp-section lp-section--soft">
     <div class="lp-wrap">
-      <p class="lp-eyebrow">Blog</p>
-      <h2 class="lp-h2">최근 글</h2>
-      {% for post in site.posts limit: 3 %}
-        <a class="lp-post" href="{{ base_path }}{{ post.url }}">
-          <div>
-            <h3 class="lp-post__title">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
-            {% if post.excerpt %}
-              <p class="lp-post__excerpt">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 120 }}</p>
-            {% endif %}
-          </div>
-          <div class="lp-post__meta"><span class="lp-post__date">{{ post.date | date: "%Y.%m.%d" }}</span></div>
-        </a>
-      {% endfor %}
-      <p style="margin:1.5rem 0 0;"><a class="lp-card__more" href="{{ base_path }}/posts/">블로그 →</a></p>
-    </div>
-  </section>
-
-  <!-- ===================== WHAT WE DO ===================== -->
-  <section class="lp-section">
-    <div class="lp-wrap">
-      <p class="lp-eyebrow">Now</p>
-      <h2 class="lp-h2">요즘 만드는 것</h2>
-      <p class="lp-sub">연구와 도구를 함께 만들면서, 제품으로는 서빙 플랫폼 H-MAS를 만들고 있습니다.</p>
+      <p class="lp-eyebrow">Projects</p>
+      <h2 class="lp-h2">프로젝트</h2>
+      <p class="lp-sub">LLM 서빙 플랫폼 <span class="lp-nowrap">H-MAS</span>를 중심으로, 그 위에서 쓰는 도구와 관련 연구를 함께 진행하고 있습니다.</p>
       <div class="lp-cards">
         <a class="lp-card" href="{{ base_path }}/hmas/">
           <h3 class="lp-card__title">AI 서빙 플랫폼</h3>
@@ -75,6 +60,26 @@ redirect_from:
           <span class="lp-card__more">연구 노트 보기 →</span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOG ===================== -->
+  <section class="lp-section">
+    <div class="lp-wrap">
+      <p class="lp-eyebrow">Blog</p>
+      <h2 class="lp-h2">최근 글</h2>
+      {% for post in site.posts limit: 3 %}
+        <a class="lp-post" href="{{ base_path }}{{ post.url }}">
+          <div>
+            <h3 class="lp-post__title">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
+            {% if post.excerpt %}
+              <p class="lp-post__excerpt">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 120 }}</p>
+            {% endif %}
+          </div>
+          <div class="lp-post__meta"><span class="lp-post__date">{{ post.date | date: "%Y.%m.%d" }}</span></div>
+        </a>
+      {% endfor %}
+      <p style="margin:1.5rem 0 0;"><a class="lp-card__more" href="{{ base_path }}/posts/">블로그 →</a></p>
     </div>
   </section>
 
@@ -100,9 +105,10 @@ redirect_from:
   <!-- ===================== CONTACT ===================== -->
   <section class="lp-section lp-final">
     <div class="lp-wrap">
-      <h2 class="lp-h2">궁금한 게 있다면</h2>
-      <p class="lp-sub">글이나 연구에 대한 이야기, 같이 해볼 만한 일, 무엇이든 편하게 메일 주세요.</p>
+      <h2 class="lp-h2">필요한 작업이 있다면</h2>
+      <p class="lp-sub">기능 하나, 오류 하나 같은 작은 작업도 괜찮습니다. 내용을 보고 진행 가능 여부와 일정, 비용을 안내드립니다.</p>
       <div class="lp-cta">
+        <a class="lp-btn lp-btn--primary" href="{{ base_path }}/contact/">문의하기</a>
         <a class="lp-btn lp-btn--line" href="mailto:contact@parameterfreak.com">contact@parameterfreak.com</a>
       </div>
     </div>

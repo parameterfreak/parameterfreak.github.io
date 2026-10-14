@@ -28,6 +28,7 @@ main:
 
   - title: "Changelog"
     url: /changelog/
+    desktop_only: true
 
   - title: "Blog"
     url: /posts/

@@ -5,7 +5,7 @@
     <a class="pf-nav__logo" href="{{ base_path }}/">parameterfreak</a>
     <nav class="pf-nav__links" aria-label="주 메뉴">
       {% for link in site.data.navigation.main %}
-        <a href="{{ base_path }}{{ link.url }}"{% if page.url contains link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        <a href="{{ base_path }}{{ link.url }}"{% if link.desktop_only %} class="pf-nav__desktop"{% endif %}{% if page.url contains link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
       {% endfor %}
       <a class="pf-nav__contact" href="{{ base_path }}/contact/"{% if page.url contains "/contact/" %} aria-current="page"{% endif %}>Contact</a>
     </nav>
