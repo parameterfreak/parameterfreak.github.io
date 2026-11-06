@@ -318,4 +318,4 @@ max(max_over_time(timestamp(up{cluster="<name>"})[24h:1m]))
 
 이 구조나 결정에 대해 의견이 있거나, 여러분의 환경에서는 다른 선택을 했다면 이야기를 듣고 싶습니다.
 
-**연락처**: [contact@parameterfreak.com](mailto:contact@parameterfreak.com)
+**연락처**: [문의하기](/contact/)

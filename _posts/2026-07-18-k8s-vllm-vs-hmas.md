@@ -653,4 +653,4 @@ req 8: 429
 
 GPU 서버를 보유하고 있고 AI 모델 서빙에 관심이 있는 조직이라면, 요청 주시는 분께 온라인/오프라인 미팅 또는 제품 소개 자료를 통해 H-MAS를 자세히 안내해 드립니다. 아래 연락처로 편하게 문의해 주세요.
 
-**연락처**: [contact@parameterfreak.com](mailto:contact@parameterfreak.com)
+**연락처**: [문의하기](/contact/)

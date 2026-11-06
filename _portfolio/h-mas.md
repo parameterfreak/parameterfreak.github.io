@@ -547,4 +547,4 @@ v0.7에서는 JWT 기반 로그인 인증에 더해 RBAC(역할 기반 접근 �
 | **핵심 가치** | GPU 활용률 극대화, 멀티 클러스터 통합 관리, 하드웨어 인지 최적 배치 |
 | **대상** | GPU 인프라를 보유한 스타트업, 연구소, 대학 연구실, 중소기업 |
 | **현재 버전** | Feature Preview (v0.7) — 2026년 7월 출시 |
-| **연락처** | [contact@parameterfreak.com](mailto:contact@parameterfreak.com) |
+| **연락처** | [문의하기](/contact/) |
